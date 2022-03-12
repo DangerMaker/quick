@@ -1,0 +1,120 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">浙金中心</string>
+    <string name="product">当前的筛选条件%1$s下没有产品，请清除筛选条件下搜索产品试试</string>
+    <string name="app_home_name">首页</string>
+    <string name="app_finance_name">交易列表</string>
+    <string name="app_account_name">个人中心</string>
+    <string name="app_more_name">更多</string>
+    <string name="usable">可用(%1$s)</string>
+    <string name="lose_efficacy">失效(%1$s)</string>
+    <string name="usage">已使用(%1$s)</string>
+    <string name="discount_time">◇有效期%1$s至%2$s可用</string>
+    <string name="quanDetailsCode">NO.%1$s</string>
+    <string name="remark">◇%1$s</string>
+    <string name="choose_tv">◇有效期至%1$s</string>
+    <string name="amount">◇满%1$s元可用</string>
+    <string name="tv_number">已选%1$s张</string>
+    <string name="quanCanStack">◇%1$s</string>
+
+
+    <string name="main_tab_name_home">首页</string>
+    <string name="main_tab_name_product">产品列表</string>
+    <string name="main_tab_name_my">我的账户</string>
+    <string name="main_tab_name_more">更多</string>
+    <string name="introduce">\t\t浙江金融资产交易中心按照党的第十八届三中全会精神，盘活存量，用好增量，"立足浙江、面向全国"，坚持政府指导、市场化运作，在资产证券化、利率市场化浪潮下，为各类金融资产提供公开、公正、公平的交易平台，实现资金需求方、供给方的灵活交易，促进金融资产流转和产品创新，打造专业化、规范化的金融资产和金融产品交易平台。</string>
+
+
+    <!--face++-->
+    <string name="meglive_prompt">请在光线充足的情况下进行检测</string>
+    <string name="face_too_large">请再离远一些</string>
+    <string name="verify_success">验证成功</string>
+    <string name="meglive_pitch">缓慢点头</string>
+    <string name="meglive_yaw">左右摇头</string>
+    <string name="meglive_mouth_open_closed">张嘴</string>
+    <string name="meglive_eye_open_closed">眨眼</string>
+    <string name="meglive_pos_yaw_left">左转</string>
+    <string name="meglive_pos_yaw_right">右转</string>
+    <string name="meglive_detect_initfailed">检测器初始化失败</string>
+    <string name="loading_text">使用说明：\n1、首先您需要输入姓名；\n2、之后您需要按照屏幕上的提示完成3个动作，以通过活体检测，同时软件会将您的人脸图像发送至服务器进行人脸验证；\n3、如果您没有通过活体检测或者人脸验证，则登录失败，反之则登录成功。</string>
+    <string name="loading_confirm">OK,I Know</string>
+    <string name="netowrk_parse_failed">解析服务器数据失败</string>
+    <string name="network_error">网络请求失败</string>
+    <string name="verify_error">验证失败</string>
+    <string name="liveness_detection_failed">活体检测失败</string>
+    <string name="liveness_detection_failed_timeout">活体检测超时失败</string>
+    <string name="liveness_detection_failed_action_blend">活体检测动作错误</string>
+    <string name="liveness_detection_failed_not_video">活体检测连续性检测失败</string>
+    <string name="novalidframe">没有合适的图像用于人脸识别</string>
+    <string name="face_not_found">请让我看到您的正脸</string>
+    <string name="face_too_dark">请让光线再亮点</string>
+    <string name="face_too_bright">请让光线再暗点</string>
+    <string name="face_too_small">请再靠近一些</string>
+    <string name="face_too_blurry">请避免侧光和背光</string>
+    <string name="face_out_of_rect">请保持脸在人脸框中</string>
+    <string name="meglive_keep_eyes_open">请勿用手遮挡眼睛</string>
+    <string name="meglive_keep_mouth_open">请勿用手遮挡嘴巴</string>
+    <string name="meglive_getpermission_motion">请打开手机读取运动数据权限</string>
+    <string name="meglive_phone_vertical">请竖直握紧手机</string>
+    <string name="transfer_earnings">参考收益率\n（受让后）</string>
+    <string name="productTitle">交易</string>
+    <string name="transferTitle">转让</string>
+    <string name="certification">认证成功</string>
+    <string name="transferList">搜索结果</string>
+    <string name="product_play">交易支付</string>
+    <string name="product_detail_title">产品详情</string>
+    <string name="rule_title">个性化预约规则</string>
+    <string name="activity_record_transaction_title">交易记录</string>
+
+
+    <string-array name="unbind_cardReason">
+        <item>cancel</item>
+        <item>lose</item>
+        <item>quota</item>
+        <item>change</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="unbind_reasonDetails">
+        <item>银行卡已注销</item>
+        <item>银行卡遗失</item>
+        <item>限额过低</item>
+        <item>银行卡升级或卡号变更</item>
+        <item>其他</item>
+    </string-array>
+    <!-- Gesture login activity -->
+    <string name="gesture_forget_gesture">忘记手势密码</string>
+    <string name="gesture_default">请输入手势密码</string>
+    <string name="gesture_error">手势密码输入错误</string>
+    <string name="gesture_correct">输入正确</string>
+
+    <!-- Create gesture activity -->
+    <string name="create_gesture_activity">CreateGestureActivity</string>
+    <string name="create_gesture_default">绘制解锁图案</string>
+    <string name="create_gesture_correct">再次绘制解锁图案</string>
+    <string name="create_gesture_less_error">至少连接6个点，请重新绘制</string>
+    <string name="create_gesture_confirm_error">与上一次绘制不一致，请重新绘制</string>
+    <string name="create_gesture_confirm_correct">设置成功</string>
+    <string name="create_gesture_reset">重新设置</string>
+
+
+    <!--权限设置-->
+
+    <string name="read_write_permission_hint">请在设置中开启存储空间权限，以正常使用浙金中心功能</string>
+    <string name="read_phone_permission_hint">浙金中心使用电话权限确定本机号码和设备ID，以保证账号登录的安全性。浙金中心不会拨打其他号码或终止通话。请在设置中开启电话权限，以正常使用浙金中心功能</string>
+    <string name="camera_permission_hint">使用该功能需要拍照权限，请前往系统设置开启权限</string>
+    <string name="read_write_camera_permission_hint">请在设置中开启存储空间权限，以正常使用浙金中心功能</string>
+
+
+    <string name="setting">去设置</string>
+    <string name="clean">取消</string>
+    <string name="permission">去设置</string>
+
+
+    <string name="career_title">选择职业</string>
+    <string name="career_description">应监管要求，请您完善以下信息</string>
+    <string name="select_career">请选择您的职业</string>
+
+    <string name="block_chain">区块链离线查询></string>
+
+
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/finance_layout"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@color/colorRed">
+            <ImageView
+                android:id="@+id/img_left"
+                android:layout_width="59px"
+                android:layout_height="59px"
+                android:layout_marginLeft="25px"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/home"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <com.hundsun.zjfae.common.view.FinanceButton
+                    android:id="@+id/product_button"
+                    android:layout_width="245px"
+                    android:layout_height="60px" />
+                <com.hundsun.zjfae.common.view.FinanceButton
+                    android:id="@+id/transfer_button"
+                    android:layout_width="245px"
+                    android:layout_height="60px" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+       <FrameLayout
+           android:id="@+id/finance_container"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+       </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

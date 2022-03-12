@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/face_delete_bank_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentTop="true">
+        <include
+            android:id="@+id/ll_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            layout="@layout/base_title" />
+
+    </RelativeLayout>
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="275px"
+                android:src="@drawable/register_success"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75px"
+                android:text="人像比对成功"
+               android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="@android:color/black"/>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/unbind_card_layout"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal"
+                android:layout_marginTop="100px"
+                android:visibility="gone"
+                android:background="@android:color/white">
+
+
+                <TextView
+                    android:layout_width="200px"
+                    android:text="解绑原因"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/unbind_shade"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                   android:textSize="15sp"
+                    android:text="银行卡已注销"
+                    android:textColor="@android:color/black"
+                    android:gravity="center|right"
+                    android:paddingRight="45px"
+                    android:layout_weight="1"/>
+
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_gravity="center"
+                    android:scaleType="center"
+                    android:src="@drawable/trandownbalck"
+                    android:layout_marginRight="25px"/>
+
+            </LinearLayout>
+
+
+
+
+            <EditText
+                android:id="@+id/other_ed"
+                android:layout_width="match_parent"
+                android:layout_height="375px"
+                android:layout_marginTop="35px"
+                android:layout_marginLeft="55px"
+                android:layout_marginRight="55px"
+                android:gravity="left|top"
+                android:visibility="gone"
+                android:textColor="@android:color/black"
+               android:textSize="15sp"
+                android:background="@drawable/white_shape"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="10px"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/delete_bank_remake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请您确保以上业务均由本人操作，并愿意承担由此可能产生的一切法律责任"
+            android:textColor="@color/colorRed"
+            android:visibility="gone"
+           android:textSize="15sp" />
+
+
+        <Button
+            android:id="@+id/affirm_bt"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@drawable/login_button"
+            android:text="确认解绑"
+            android:visibility="gone"
+            android:textColor="@android:color/white" />
+
+
+
+        <LinearLayout
+            android:id="@+id/change_layout"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/change_button"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_margin="10px"
+                android:background="@drawable/login_button"
+                android:text="去换卡"
+                android:textColor="@android:color/white" />
+
+
+            <Button
+                android:id="@+id/clean_button"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_margin="10px"
+                android:background="@drawable/login_button"
+                android:text="暂不换卡"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

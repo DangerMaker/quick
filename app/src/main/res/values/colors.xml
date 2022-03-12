@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B11F1A</color>
+    <color name="colorPrimaryDark">#B11F1A</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorGeneral">#999999</color>
+    <color name="product_colorGeneral">#666666</color>
+    <color name="colorRed">#B11F1A</color>
+
+
+    <color name="red">#FF0000</color><!--红色 -->
+    <color name="Theme_text_orange_shadow">#FADFC6</color>
+    <color name="salmon">#FA8072</color><!--鲜肉色 -->
+    <color name="nualrate">#E65C57</color>
+
+    <color name="purchase_bg">#F8F8F8</color>
+
+    <color name="blue">#387ef5</color>
+
+    <color name="Theme_white">#FFFFFF</color>
+    <color name="Theme_bloue">#419DFF</color>
+
+    <color name="state_play_color">#F1F1F1</color>
+    <color name="conditions">#F0F2F5</color>
+
+    <color name="crimson">#DC143C</color><!--暗深红色 -->
+
+    <color name="lightcoral">#F08080</color><!--亮珊瑚色 -->
+
+    <color name="hui">#E2E2E7</color>
+
+    <color name="storage_layout_bg">#387EF5</color>
+
+    <color name="extract_layout_bg">#F9A83C</color>
+
+    <color name="product_color">#F0F0F0</color>
+
+    <color name="product_over">#D79D9B</color>
+
+    <color name="offline_color">#C7635F</color>
+
+    <color name="product">#F0F2F5</color>
+    <color name="add_bank_bg">#FDFF99</color>
+
+    <color name="agreement">#0000FF</color>
+
+    <color name="discount_bg">#EEEEEE</color>
+
+    <color name="efficacy_bg">#666666</color>
+    <color name="efficacy_color">#737373</color>
+    <color name="bao_color">#FBA246</color>
+
+    <color name="bao_title_color">#ECD176</color>
+
+
+
+    <!-- 常用颜色值 -->
+    <color name="white40">#40FFFFFF</color>
+    <color name="white">@android:color/white</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="green">#008000</color>
+    <color name="lightblue">#0083FF</color>
+
+    <color name="status_bar_color">#CFCFCF</color>
+
+    <color name="main_green">#24cf5f</color>
+    <color name="main_gray">#9A9A9A</color>
+    <color name="main_black">#333</color>
+    <color name="actionbar_background">@color/main_green</color>
+    <color name="transparent">#00000000</color>
+    <color name="window_background">#f2f2f2</color>
+
+    <color name="main_touch">@color/black_alpha_32</color>
+
+    <color name="comment_yellow">#FFFFEE</color>
+
+    <color name="main_background">#F6F6F6</color>
+    <color name="list_divider_color">#c8c7cc</color>
+    <color name="list_item_background_pressed">#FCFCFC</color>
+
+    <color name="actionbar_item_background_normal">@color/transparent</color>
+    <color name="actionbar_item_background_pressed">#0b751e</color>
+
+    <color name="ui_dialog_divider">@color/list_divider_color</color>
+    <color name="ui_dialog_list_text">#5E5E5E</color>
+    <color name="text_dark">#af000000</color>
+    <color name="text_light">#3f000000</color>
+    <color name="light_gray">#1a000000</color>
+    <color name="lightest_gray">#0a000000</color>
+    <color name="bg_touch">@color/lightest_gray</color>
+
+    <color name="main_link_text_color">#ffbedfff</color>
+    <color name="timeline_clickable_text_highlighted_background">#ffbedfff</color>
+
+    <!-- 下拉刷新时，颜色值 -->
+    <color name="swiperefresh_color1">#ff00ddff</color>
+    <color name="swiperefresh_color2">#ffffbb33</color>
+    <color name="swiperefresh_color3">#ffff4444</color>
+    <color name="swiperefresh_color4">#ffaa66cc</color>
+
+    <color name="project_listitem_someinfo">#b6b6b6</color>
+
+
+    <color name="user_info_option_pressed">#1EB050</color>
+
+    <!-- 反馈 -->
+    <color name="edittext_hint_color">#ffa9a9a9</color>
+
+    <!-- 日历dialog -->
+    <color name="circle_background">#fff2f2f2</color>
+    <color name="done_text_color_normal">#ff333333</color>
+    <color name="done_text_color_disabled">#ffcccccc</color>
+    <color name="darker_blue">#ff00cc99</color>
+    <color name="date_picker_text_normal">#ff999999</color>
+    <color name="date_picker_view_animator">#fff2f2f2</color>
+
+    <color name="spinner_background">#464646</color>
+
+    <!--  created by  fei -->
+    <color name="ques_bt_bg">#f6f6f6</color>
+    <color name="ques_bt_text_color_light">#24cf5f</color>
+    <color name="ques_detail_bg_color">#f9f9f9</color>
+    <color name="user_info_message_notice">#E35B5A</color>
+
+    <color name="text_title_color">#111111</color>
+    <color name="text_desc_color">#6a6a6a</color>
+    <color name="text_secondary_color">#9d9d9d</color>
+
+    <color name="tweet_indicator_text_color">#111111</color>
+    <color name="tweet_indicator_text_color_error">#e35050</color>
+
+    <!-- 新版登录模块-->
+    <color name="login_line_color">#dededf</color>
+    <color name="login_input_active">#31b968</color>
+    <color name="login_other_color">#cacaca</color>
+    <color name="account_input_bg_color">#33ffffff</color>
+    <color name="account_lock_bg">#ff43815c</color>
+    <color name="account_lock_font_color">#FF68997C</color>
+    <color name="account_input_color">#c9c9c9</color>
+    <color name="account_pressed_true">#14b94d</color>
+
+    <color name="bg_press">#ebebeb</color>\
+    <color name="bg_press_material">#d4d4d4</color>
+
+
+
+    <color name="drop_down_selected">#7B1FA2</color>
+    <color name="drop_down_unselected">#111111</color>
+
+    <color name="mask_color">#88888888</color>
+    <color name="check_bg">#f2f2f2</color>
+    <color name="un_press_color">#9C27B0</color>
+
+    <color name="viewfinder_mask">#A6000000</color>
+    <color name="result_view">#A6000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="cBgHomeTop">#2BA728</color>
+
+    <!--图片选择-->
+    <color name="multiple_image_select_primaryDark">@color/colorRed</color>
+    <color name="multiple_image_select_accent">@color/colorRed</color>
+    <!--选中图片之后toolbar的颜色-->
+    <color name="multiple_image_select_primary">@color/colorRed</color>
+    <!--手势颜色-->
+    <color name="grey_b2b2b2">#B2B2B2</color>
+    <color name="blue_78d2f6">#78D2F6</color>
+    <color name="blue_01aaee">#01AAEE</color>
+    <color name="blue_00aaee">#00AAEE</color>
+    <color name="red_f3323b">#F3323B</color>
+    <color name="grey_f6f6f6">#f6f6f6</color>
+    <color name="grey_a5a5a5">#A5A5A5</color>
+    <color name="grey_dde1e7">#DDE1E7</color>
+    <color name="red_f4333c">#F4333C</color>
+
+    <color name="career_bg">#F5F4F9</color>
+
+
+    <color name="color_sell_enable">#FFC0BE</color>
+</resources>

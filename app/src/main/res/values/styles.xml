@@ -1,0 +1,201 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+
+
+    <style name="AppTheme.Launcher" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/activity_bg</item>
+
+    </style>
+
+    <!--webview样式 去除背景图片 防止键盘弹起出现背景图-->
+    <style name="WebViewActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+    </style>
+
+
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+
+    <style name="LoginActivityTheme" parent="AppTheme">
+
+        <item name="android:windowBackground">@drawable/frame_shape</item>
+        <item name="android:windowIsFloating">true</item>
+        <!--&lt;!&ndash;是否半透明&ndash;&gt;-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="android:windowBackground">@drawable/frame_shape</item>-->
+        <!--&lt;!&ndash;背景是否模糊显示&ndash;&gt;-->
+        <!--<item name="android:backgroundDimEnabled">true</item>-->
+        <!--&lt;!&ndash;设置窗口内容不覆盖&ndash;&gt;-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--&lt;!&ndash;点击空白地方关闭&ndash;&gt;-->
+        <!--<item name="android:windowCloseOnTouchOutside">false</item>-->
+        <!--&lt;!&ndash;是否浮现在activity之上&ndash;&gt;-->
+        <!--<item name="android:windowIsFloating">true</item>-->
+
+    </style>
+
+
+    <style name="mystyle" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@drawable/dialog_shape</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 遮罩层 -->
+        <item name="android:backgroundDimAmount">0.5</item>
+
+
+    </style>
+
+
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+
+
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+    <!-- 自定义progressDialog -->
+    <style name="CustomDialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+
+
+    <style name="InputTextView">
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+    <style name="PermissionsTheme" parent="@style/AppTheme">
+        <!-- Customize your theme here. -->
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/account_check_style</item>
+    </style>
+
+
+    <!-- CustomCheckBox theme -->
+    <style name="CustomCheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/play_type_checkbox_style</item>
+    </style>
+
+    <style name="account_checkbox_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/account_checkbox_style</item>
+        <item name="android:minWidth">60px</item>
+        <item name="android:minHeight">60px</item>
+    </style>
+
+    <!--通用base-->
+    <style name="base_check_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/login_check_style</item>
+
+    </style>
+
+    <!--登录-->
+
+    <style name="login_check_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/login_check_style</item>
+
+    </style>
+
+
+    <style name="PassWordCheckStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/pass_word_check_style</item>
+
+    </style>
+
+
+
+    <style name="BaseDialogFragmentStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item >
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowIsFloating">false</item>
+        <!-- 测试了下也是内容背景色 会覆盖android:windowBackground-->
+        <!--<item name="android:background">@android:color/holo_red_dark</item>-->
+        <!--
+            如果width和height都是MATCH_PARENT 对话框外的背景色就无效了
+            int width = ViewGroup.LayoutParams.MATCH_PARENT;
+            int height = ViewGroup.LayoutParams.WRAP_CONTENT;
+            dialog.getWindow().setLayout(width, height);//全屏
+            dialog.getWindow().setGravity(Gravity.BOTTOM);//内容设置在底部
+            gravity 和 宽高设置实测无效！！！！！！还是需要代码来设置
+        -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- 内容的背景色.对于全屏很重要，系统的内容宽度是不全屏的，替换为自己的后宽度可以全屏-->
+        <!--相当于 dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否有背景色 -->
+        <item name="android:backgroundDimEnabled">true</item>
+
+    </style>
+
+
+    <style name="WarpLinearLayoutDefault">
+        <item name="grivate">left</item>
+        <item name="horizontal_Space">20dp</item>
+        <item name="vertical_Space">20dp</item>
+        <item name="isFull">false</item>
+    </style>
+
+
+</resources>

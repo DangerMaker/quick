@@ -1,0 +1,482 @@
+syntax = "proto3";
+
+package onight.zjfae.afront;
+option java_outer_classname="AllAzjProto";
+
+
+enum PEAModule{//app独有的接口
+	AZJ = 0;
+};
+
+enum PEACommand{
+	ADS = 0 ;//获取广告信息
+	TIP = 1 ;//心灵鸡汤
+	MER = 2; //聚合接口
+	URL = 3; //url列表
+	LOG = 4; //记录日志
+	UPG = 5; //app应用升级
+	C01 = 10 ;//后处理配置重新加载
+	LTP = 11 ;//加载日志输出匹配规则
+	CTL = 12 ;//加载筛选排序的控件
+	ICO = 13 ;//图标
+	TOK = 14 ;//token
+	NOT = 15 ;//公告
+	DIC = 16 ;//字典参数
+	UPI = 17 ;//接口更新
+	DYN = 18 ;//动态属性
+	GBP = 19 ;//银行图标获取
+	BLG = 20 ;//批量日志记录
+	MCO = 21 ;//消息条数
+	CTV = 22 ;//加载筛选排序新的控件
+};
+
+message PBAPPAds
+{
+	string uuid = 1;
+	string func_icons = 2;
+	string ani_method = 3;
+	string ani_params = 4;
+	string func_url = 5;
+	string platforms = 6;
+	string app_vers = 7;
+	string show_type = 8;
+	int32 interval_min = 9;
+	int32 ctrl_iparam = 10;
+	string ctrl_strparam = 11;
+	int64 inserttime = 12;
+	int32 status = 13;
+	string is_share = 14;
+	string user_type = 15;
+	string startUpTime = 16;
+}
+
+message PEAGetAds
+{
+	string show_type = 1; //显示类型(0:启动页广告,1:首页显示广告,2:登录时候显示)
+}
+
+message PEARetAds
+{
+	string show_type = 1; //显示类型(0:启动页广告,1:首页显示广告,2:登录时候显示)
+	repeated PBAPPAds ads = 2;//广告列表
+	string res_time = 200;
+}
+
+
+message PBAPPShakeTips
+{
+	string uuid = 1;
+	string tips_title = 2;
+	string tips_content = 3;
+	string tips_url = 4;
+	string platforms = 5;
+	string app_vers = 6;
+	int64 inserttime = 7;
+	int32 status = 8;
+}
+
+message PEAGetTips
+{
+	string  user_id  = 1; //用户id，暂时不用
+	int32	count  = 2;//个数
+}
+
+
+message PEARetTips
+{
+	string  user_id  = 1; //用户id，暂时不用
+	repeated PBAPPShakeTips tips = 2;//提示列表
+}
+
+
+//url请求
+message PBAPPUrlParams
+{
+	string uuid = 1;
+	string key_no = 2;
+	string backend_url = 3;
+	string deatails = 4;
+	string is_share = 5;
+}
+
+message PEAGetUrl
+{
+	string  key_no  = 1; //keyno，(1:常见问题,2:兑付确权信息,3:中心公告,4:活动专区,5:社区主页,6:增值服务)
+}
+
+message PEARetUrl
+{
+	string  key_no  = 1; //keyno，查询的时候使用，如果为空则差全部
+	repeated PBAPPUrlParams urls = 2;//urls列表
+}
+
+message PEAGetUpg
+{
+	int32 platform = 1; //平台类型  1:android, 2:ios
+	string versionid =2;//当前应用版本号
+}
+
+message PEARetUpg
+{
+	string contents = 1; //升级内容
+	string upType = 2;//是否强制升级     0:非强制升级,1:强制升级
+	string upurl = 3;//升级地址
+	string versionid =4;//需要升级到的版本号
+	string picName =5;//图片名称
+	string picAddress =6;//图片地址
+	string returnCode  = 20; //返回码    0000:不需要升级,0001:平台类型未找到,9999需要升级
+	string returnMsg  = 21;//提示信息
+}
+
+//App日志
+message PEALogs
+{
+	//string uuid = 1;
+	string level = 2;
+	//int64 crt_time = 3;
+	//int64 end_time = 4;
+	int32 cost_mills = 5;
+	string face_code = 6;
+	string face_name = 7;
+	double amount = 8;
+	int32 count = 9;
+	int32 optype = 10;//操作类型(0:访问,1:下载,2:购买,3:鲜花,4:评分,5:新建产品,6:推荐访问,7:应用错误,8:消费充值,9:消费返还,10:新建用户,11:应用启动,12:应用退出)
+	int32 ctype = 11;
+	string backend_url = 12;
+	string trade_date = 13;
+	string ret_code = 14;
+	string acct_no = 15;
+	string user_id = 16;
+	string channel_id = 17;
+	string merchnat_id = 18;
+	string client_ip = 19;
+	string contents = 20;
+	string client_os = 21;
+	string client_device = 22;
+	string app_vers = 23;
+	string provider = 24;
+	string device_token = 25;
+	string device_id = 26;
+	int64 inserttime = 27;
+	string pbname = 28;
+}
+
+
+message PEARetAppLogs
+{
+	string  returnCode  = 1; //keyno，查询的时候使用，如果为空则差全部
+	string  returnMsg  = 2; //keyno，查询的时候使用，如果为空则差全部
+}
+
+//App批量日志
+message PEABatchLogs
+{
+	//string uuid = 1;
+	string level = 2;
+	//int64 crt_time = 3;
+	//int64 end_time = 4;
+	int32 cost_mills = 5;
+	string face_code = 6;
+	string face_name = 7;
+	double amount = 8;
+	int32 count = 9;
+	int32 optype = 10;//操作类型(0:访问,1:下载,2:购买,3:鲜花,4:评分,5:新建产品,6:推荐访问,7:应用错误,8:消费充值,9:消费返还,10:新建用户,11:应用启动,12:应用退出)
+	int32 ctype = 11;
+	string backend_url = 12;
+	string trade_date = 13;
+	string ret_code = 14;
+	string acct_no = 15;
+	string user_id = 16;
+	string channel_id = 17;
+	string merchnat_id = 18;
+	string client_ip = 19;
+	string client_os = 21;
+	string client_device = 22;
+	string app_vers = 23;
+	string provider = 24;
+	string device_token = 25;
+	string device_id = 26;
+	int64 inserttime = 27;
+	repeated PEABatchLogsSub batchLogs = 28;
+}
+
+message PEABatchLogsSub
+{
+	string contents = 1;
+	string pbname = 2;
+}
+
+
+message PEARetBatchAppLogs
+{
+	string  returnCode  = 1;
+	string  returnMsg  = 2;
+}
+
+
+message PEAConfigReload
+{
+	string  oper_id  = 1; //操作者id，暂时不用
+}
+
+
+message PEARetConfigReload
+{
+	string returnCode  = 1; //返回码
+	string returnMsg  = 2;//提示信息
+}
+
+
+
+message PBFramePacket{
+	string gcmd = 1 ;//代理的gcmd
+	string exts = 2;//扩展头
+	string jsbody = 3 [  jstype  = JS_NORMAL ];//请求的json数据
+	bytes pbbody = 4;//请求的pb数据
+	string pbname = 5 ;//代理的pbname
+	string pack_id = 11;//包在多个请求中的的id
+	string version = 12;//请求的接口版本号
+	repeated PBFramePacket nextpacks = 20;//下一个请求
+	repeated string clonefields = 21;//传到给下个节点的属性字段
+}
+
+message PWMergeProxy
+{
+	repeated PBFramePacket packets = 1 ;//需要合并的请求
+}
+
+message PWRetMerges
+{
+	int32	retcode = 1;//返回状态码
+	string  retmsg  = 2;//返回的消息信息
+	repeated PBFramePacket retpack = 3 ;//需要合并的请求
+}
+
+message PEAGetControl
+{
+	string control_location =1;//控件位置，subscribeList 认购列表，transferList 转让列表
+	string control_position =2;//控件具体方位，first第一列  second第二列 thrid第三列
+	string version_classify =3;//控件版本信息，first第一列  second第二列 thrid第三列
+}
+
+message PBAPPSearchSortControl_l1
+{
+	string control_type = 1;
+	repeated PBAPPSearchSortControl_l2 controls = 20;//控件列表
+}
+
+message PBAPPSearchSortControl_l2
+{
+	string uuid = 1;
+	string control_type = 2;
+	string control_weights = 3;
+	string control_name = 4;
+	string control_value = 5;
+	string control_h_name = 6;
+	string control_h_value = 7;
+	string control_status = 8;
+	string control_location = 9;
+	string control_sort = 10;
+	string control_menu_levels = 11;
+	string control_position = 12;
+}
+
+message PEARetControl
+{
+	repeated PBAPPSearchSortControl_l1 control_list = 1;//控件列表
+	string returnCode  = 20; //返回码    0000:查询成功
+	string returnMsg  = 21;//提示信息
+}
+
+
+message PEAGetControlVersion
+{
+	string control_location =1;//控件位置，subscribeList 认购列表，transferList 转让列表
+	string control_position =2;//控件具体方位，first第一列  second第二列 thrid第三列
+	string version_classify =3;//控件版本信息，first第一列  second第二列 thrid第三列
+	string control_type =4;//控件类型
+	string inter_vers =5;//版本信息
+}
+
+message PBAPPSearchSortControlVersion_l1
+{
+	string control_type = 1;
+	repeated PBAPPSearchSortControlVersion_l2 controls = 20;//控件列表
+}
+
+message PBAPPSearchSortControlVersion_l2
+{
+	string uuid = 1;
+	string control_type = 2;
+	string control_weights = 3;
+	string control_name = 4;
+	string control_value = 5;
+	string control_h_name = 6;
+	string control_h_value = 7;
+	string control_status = 8;
+	string control_location = 9;
+	string control_sort = 10;
+	string control_menu_levels = 11;
+	string control_position = 12;
+}
+
+message PEARetControlVersion
+{
+	repeated PBAPPSearchSortControlVersion_l1 control_list = 1;//控件列表
+	string returnCode  = 20; //返回码    0000:查询成功
+	string returnMsg  = 21;//提示信息
+}
+
+message PEAGetIcons
+{
+	string icons_location =1;//图标位置，subscribeList 认购列表，transferList 转让列表
+	string icons_position =2;//图标具体方位，left 左侧，right 右侧，right_lower 右下
+	string icons_version =3;//图标版本号
+}
+
+message PBAPPIcons
+{
+	string uuid = 1;
+	string icons_name = 2;
+	string icons_type = 3;
+	string icons_address = 4;
+	string status = 5;
+	string icons_location = 6;
+	string keyword = 7;
+	string icons_weights = 8;
+	string remark = 9;
+	string icons_position = 10;
+	string icons_link = 11;
+	string link_keyword_name = 12;
+	string link_location = 13;
+	string is_share = 14;
+	string link_login_flag = 15;
+	string jump_rule = 16;
+}
+
+message PEARetIcons
+{
+	repeated PBAPPIcons icons_list = 1;//图标列表
+	string returnCode  = 20; //返回码    0000:查询成功
+	string returnMsg  = 21;//提示信息
+}
+
+message PEAGetCustServToken
+{
+	string fund_account =1;//资金账号
+}
+
+message PEARetCustServToken
+{
+	string token  = 1;//token值
+	string returnCode  = 20; //返回码    0000:查询成功
+	string returnMsg  = 21;//提示信息
+}
+
+message PEAGetNotice
+{
+	string type =1;//公告类型:0-高净值升级公告
+}
+
+message PBAPPNotice
+{
+	string uuid = 1;
+	string page_title = 2;
+	string notice_title = 3;
+	string notice_content = 4;
+	string type = 5;
+	string status = 6;
+}
+
+message PEARetNotice
+{
+	PBAPPNotice notice  = 1;//公告
+	string returnCode  = 20; //返回码    0000:查询成功
+	string returnMsg  = 21;//提示信息
+}
+
+message PEAGetParms
+{
+	repeated string key_no =1;//key编号
+}
+
+message PBAPPParms
+{
+	repeated string key_code = 1;
+}
+
+message PEARetParms
+{
+	repeated PBAPPParms parms  = 1;//key code
+	string returnCode  = 20; //返回码    0000:查询成功
+	string returnMsg  = 21;//提示信息
+}
+
+message PEAGetUpdInterface
+{
+	repeated PBAPPUpdInterfaceReq updinterface  = 1;//请求接口是否更新
+}
+
+message PBAPPUpdInterfaceReq
+{
+	string pbname = 1;
+	string parm1 = 2;
+	string parm2 = 3;
+	string parm3 = 4;
+	string last_updtime = 5;
+}
+
+message PBAPPUpdInterfaceRes
+{
+	string pbname = 1;
+	string is_update = 2;//0-否，1-是
+}
+
+message PEARetUpdInterface
+{
+	repeated PBAPPUpdInterfaceRes updinterface  = 1;//公告
+	string resTime = 99;//返回时间
+	string returnCode  = 100; //返回码    0000:查询成功
+	string returnMsg  = 101;//提示信息
+}
+
+message PEAGetBankPic
+{
+	string  bankCode=1;//银行代码
+	string  isRecommend=2;//是否推荐
+}
+
+message PBAPPBankPic
+{
+	string uuid = 1;
+	string bank_code = 2;
+	string bank_name = 3;
+	string bankIconUrl = 4;
+	string bankIsRecommend = 5;
+	string bank_weight = 6;
+}
+
+message PEARetBankPic
+{
+	repeated PBAPPBankPic bank_pic_list = 1;//图标列表
+	string returnCode  = 20; //返回码    0000:查询成功
+	string returnMsg  = 21;//提示信息
+}
+
+message PEAGetMessageCount
+{
+	string icons_location =1;//图标位置，subscribeList 认购列表，transferList 转让列表
+}
+
+message PBAPPMessageCount
+{
+	string unread_count = 1;//未读消息条数
+}
+
+message PEARetMessageCount
+{
+	PBAPPMessageCount count = 1;//消息条数
+	string returnCode  = 20; //返回码    0000:查询成功
+	string returnMsg  = 21;//提示信息
+}
+

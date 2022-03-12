@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/quan_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25px"
+        android:background="@drawable/envelope_shape"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15px"
+            android:background="@drawable/envelope_red_shape" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15px"
+                android:layout_marginRight="285px"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/money_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|bottom"
+                        android:text="¥"
+                        android:textColor="@color/colorRed"
+                       android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/quanValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="5px"
+                        android:textColor="@color/colorRed"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/quanName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="8sp"
+                    app:autoSizeMaxTextSize="14sp"
+                    app:autoSizeStepGranularity="1sp"
+                   android:textSize="15sp"
+                    android:textColor="@color/colorRed" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="275px"
+                android:layout_height="125px"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true">
+
+
+                <ImageView
+                    android:id="@+id/image_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+
+
+
+
+                <TextView
+                    android:id="@+id/quanDetailsCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5px"
+                    android:gravity="center|left"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="8sp"
+                    app:autoSizeMaxTextSize="14sp"
+                    app:autoSizeStepGranularity="1sp"
+                    android:layout_marginTop="55px"
+                    android:text="@string/quanDetailsCode"
+                    android:textColor="@android:color/white"
+                   android:textSize="15sp" />
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="33px"
+                android:scaleType="fitXY"
+                android:layout_marginTop="108px"
+                android:src="@drawable/halfround"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15px"
+            android:layout_margin="5px"
+            android:orientation="horizontal">
+
+           <LinearLayout
+               android:layout_width="0px"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/quanCatalogRemark"
+                   android:layout_width="wrap_content"
+                   android:layout_height="80px"
+                   android:textColor="#888888"
+                   android:layout_weight="1"
+                   android:gravity="left" />
+
+
+           </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/tv_benjin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="45px"
+                    android:gravity="center"
+                    android:text=""
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/image_check"
+                    android:layout_width="40px"
+                    android:layout_height="46px"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="45px"
+                    android:src="@drawable/kqou"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/more_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/more_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="查看全部"
+                android:textColor="@color/colorRed"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/more_iv"
+                android:layout_width="20px"
+                android:layout_height="24px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5px"
+                android:src="@drawable/red_more" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

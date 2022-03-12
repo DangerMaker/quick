@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_user_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ll_top_bar"
+        layout="@layout/base_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_head"
+                android:layout_width="match_parent"
+                android:layout_height="200px"
+                android:orientation="horizontal"
+                android:paddingLeft="35px"
+                android:paddingRight="35px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="头像"
+                    android:textColor="@color/black"
+                   android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_head"
+                        android:layout_width="125px"
+                        android:layout_height="125px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30px"
+                        android:src="@drawable/head" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGeneral" />
+
+            <LinearLayout
+                android:id="@+id/lin_contact"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal"
+                android:paddingLeft="35px"
+                android:paddingRight="35px">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:text="紧急联系人"
+                    android:textColor="@color/black"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                   android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10px"
+                    android:scaleType="center"
+                    android:src="@drawable/right_back" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGeneral" />
+
+            <LinearLayout
+                android:id="@+id/lin_phone"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal"
+                android:paddingLeft="35px"
+                android:paddingRight="35px">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:text="联系电话"
+                    android:textColor="@color/black"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                   android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10px"
+                    android:scaleType="center"
+                    android:src="@drawable/right_back" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGeneral" />
+
+            <LinearLayout
+                android:id="@+id/lin_address"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal"
+                android:paddingLeft="35px"
+                android:paddingRight="35px">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:text="居住地"
+                    android:textColor="@color/black"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                   android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10px"
+                    android:scaleType="center"
+                    android:src="@drawable/right_back" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGeneral" />
+
+            <LinearLayout
+                android:id="@+id/lin_work"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal"
+                android:paddingLeft="35px"
+                android:paddingRight="35px">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:text="职业"
+                    android:textColor="@color/black"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_work"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                   android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10px"
+                    android:scaleType="center"
+                    android:src="@drawable/right_back" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGeneral" />
+
+            <LinearLayout
+                android:id="@+id/lin_wechat"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal"
+                android:paddingLeft="35px"
+                android:paddingRight="35px">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:text="微信号"
+                    android:textColor="@color/black"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_wechat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                   android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10px"
+                    android:scaleType="center"
+                    android:src="@drawable/right_back" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGeneral" />
+
+            <LinearLayout
+                android:id="@+id/lin_education"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal"
+                android:paddingLeft="35px"
+                android:paddingRight="35px">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:text="学历"
+                    android:textColor="@color/black"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_education"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                   android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10px"
+                    android:scaleType="center"
+                    android:src="@drawable/right_back" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGeneral" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

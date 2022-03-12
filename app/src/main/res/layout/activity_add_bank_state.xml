@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bank_state_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.hundsun.zjfae.activity.mine.AddBankStateActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentTop="true">
+        <include
+            android:id="@+id/ll_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            layout="@layout/base_title" />
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_gravity="center"
+        android:layout_marginTop="25px"
+        android:src="@drawable/register_success"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55px"
+        android:text="恭喜!银行卡绑定成功"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@android:color/black" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="25px"
+        android:background="@color/product_color"/>
+
+
+    
+    
+    <Button
+        android:id="@+id/bank_state_button"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="150px"
+        android:layout_marginLeft="45px"
+        android:layout_marginRight="45px"
+        android:text="完成"
+       android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/account_button_selector"/>
+    
+</LinearLayout>

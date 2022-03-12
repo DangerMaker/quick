@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/ll_risk_assessment_problem"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:background="@color/colorRed"
+        android:layout_alignParentTop="true">
+
+        <include
+            android:id="@+id/ll_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            layout="@layout/base_title"/>
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/elv_problem"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:groupIndicator="@null"
+        android:scrollbars="none"/>
+
+</LinearLayout>

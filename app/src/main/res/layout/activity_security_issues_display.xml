@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_security_issues_display"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentTop="true">
+
+        <include
+            android:id="@+id/ll_top_bar"
+            layout="@layout/base_title"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_problem_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:background="@drawable/shape_assignee_pay_border"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:text="安保问题"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_problem_one"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/answer_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:background="@drawable/shape_assignee_pay_border"
+                android:ellipsize="end"
+                android:hint="请输入答案"
+                android:maxLines="1"
+                android:padding="30px"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_problem_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:background="@drawable/shape_assignee_pay_border"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:text="安保问题"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_problem_two"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/answer_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:background="@drawable/shape_assignee_pay_border"
+                android:ellipsize="end"
+                android:hint="请输入答案"
+                android:maxLines="1"
+                android:padding="30px"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_problem_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:background="@drawable/shape_assignee_pay_border"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:text="安保问题"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_problem_three"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/answer_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:background="@drawable/shape_assignee_pay_border"
+                android:ellipsize="end"
+                android:hint="请输入答案"
+                android:maxLines="1"
+                android:padding="30px"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/bt_next"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_margin="30px"
+                android:background="@drawable/account_button_selector"
+                android:text="完成"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

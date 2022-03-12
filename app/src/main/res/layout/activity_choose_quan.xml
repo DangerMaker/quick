@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/choose_quan_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.hundsun.zjfae.activity.product.ChooseQuanActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <include
+            android:id="@+id/ll_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/base_title" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="88px"
+            android:paddingLeft="35px"
+            android:paddingRight="35px"
+           android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:text="取消"/>
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/choose_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/discount_bg">
+    </android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_margin="35px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/number_tv"
+            android:layout_width="200px"
+            android:layout_height="match_parent"
+            android:text="已选0张"
+            android:singleLine="true"
+            android:gravity="center|right"
+            android:layout_marginRight="35px"/>
+
+        <Button
+            android:id="@+id/finish_quan"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="确认"
+            android:textColor="@android:color/white"
+            android:background="@drawable/account_button_selector"/>
+    </LinearLayout>
+
+
+</LinearLayout>

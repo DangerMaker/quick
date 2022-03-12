@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_slidingmenu"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_head"
+        android:layout_width="125px"
+        android:layout_height="125px"
+        android:layout_marginTop="35px"
+        android:src="@drawable/head" />
+
+    <TextView
+        android:id="@+id/tv_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15px"
+        android:text=""
+        android:textColor="@color/colorGeneral" />
+
+    <LinearLayout
+        android:id="@+id/lin_usertype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="30px">
+
+        <TextView
+            android:id="@+id/tv_usertype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:background="@drawable/message_shape"
+            android:padding="5px"
+            android:textColor="@color/Theme_white"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/img_touzizhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:padding="5px"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="35px"
+        android:layout_marginRight="35px"
+        android:background="@color/colorGeneral" />
+
+    <LinearLayout
+        android:id="@+id/lin_my_message"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:scaleType="fitXY"
+                android:src="@drawable/message" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35px"
+                android:text="我的消息"
+               android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="35px"
+        android:layout_marginRight="35px"
+        android:background="@color/colorGeneral" />
+
+    <LinearLayout
+        android:id="@+id/lin_my_have"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:src="@drawable/box" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35px"
+                android:text="我的资产"
+               android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="35px"
+        android:layout_marginRight="35px"
+        android:background="@color/colorGeneral" />
+
+    <LinearLayout
+        android:id="@+id/lin_account_total"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:src="@drawable/setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35px"
+                android:text="账户总额"
+               android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="35px"
+        android:layout_marginRight="35px"
+        android:background="@color/colorGeneral" />
+
+    <LinearLayout
+        android:id="@+id/lin_account_center"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:src="@drawable/wan_heads" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35px"
+                android:text="账户中心"
+               android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="35px"
+        android:layout_marginRight="35px"
+        android:background="@color/colorGeneral" />
+
+    <LinearLayout
+        android:id="@+id/lin_exit"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:src="@drawable/exit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35px"
+                android:text="安全退出"
+               android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="35px"
+        android:layout_marginRight="35px"
+        android:background="@color/colorGeneral" />
+</LinearLayout>

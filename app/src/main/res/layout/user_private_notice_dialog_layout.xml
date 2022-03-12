@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_private_notice_dialog_shape">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:gravity="center" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/product_color"/>
+
+
+
+
+    <WebView
+        android:id="@+id/notice_webView"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_height="300dp" />
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/product_color"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:background="@drawable/user_private_notice_dialog_colse_share"
+            android:text="取消"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/product_color"/>
+
+        <TextView
+            android:id="@+id/tv_agree"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="同意并使用"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:background="@drawable/user_private_notice_dialog_agree_shape"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

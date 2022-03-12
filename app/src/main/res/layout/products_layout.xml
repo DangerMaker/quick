@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/product_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/left_subscrilbe"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="默认排序"
+                    android:ellipsize="middle"
+                    android:singleLine="true"
+                    android:textColor="@drawable/conditions_textcolor"
+                    android:layout_margin="10px"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:drawableRight="@drawable/product_conditions"
+                    android:background="@drawable/product_conditions_button"
+                    />
+
+                <RadioButton
+                    android:id="@+id/center_subscrilbe"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="筛选"
+                    android:ellipsize="middle"
+                    android:singleLine="true"
+                    android:textColor="@drawable/conditions_textcolor"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:layout_margin="10px"
+                    android:drawableRight="@drawable/product_conditions"
+                    android:background="@drawable/product_conditions_button"
+                    />
+                <RadioButton
+                    android:id="@+id/right_subscrilbe"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="分类"
+                    android:ellipsize="middle"
+                    android:singleLine="true"
+                    android:textColor="@drawable/conditions_textcolor"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:layout_margin="10px"
+                    android:drawableRight="@drawable/product_conditions"
+                    android:background="@drawable/product_conditions_button"
+                    />
+            </RadioGroup>
+
+        </LinearLayout>
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            app:srlPrimaryColor="@color/colorRed"
+            app:srlAccentColor="@android:color/white"
+            android:descendantFocusability="blocksDescendants">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/product_RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="591px"
+                android:layout_height="546px"
+                android:src="@drawable/bg_kong"
+                android:layout_gravity="center"
+                android:scaleType="center"/>
+
+            <TextView
+                android:id="@+id/product_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25px"
+                android:layout_marginRight="25px"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:text="暂无产品"
+                />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

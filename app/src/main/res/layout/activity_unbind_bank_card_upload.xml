@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/unbind_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.hundsun.zjfae.activity.mine.UnbindBankCardUploadActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:orientation="horizontal"
+        android:background="@color/colorRed">
+
+        <TextView
+            android:id="@+id/back_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="35px"
+            android:paddingRight="35px"
+            android:text="返回"
+           android:textSize="15sp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="资料上传"
+           android:textSize="15sp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/required_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="35px"
+            android:paddingRight="35px"
+            android:text="完成"
+           android:textSize="15sp"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:layout_gravity="right"
+            android:gravity="center"/>
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/animation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="10px"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/number_tv"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_marginRight="10px"
+                android:textColor="@android:color/white"
+                android:background="@drawable/shape_blue_circular"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/business_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:textSize="15sp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+
+        <WebView
+            android:id="@+id/highNetWorthUpload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </WebView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:padding="25px"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/materials_tv"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginLeft="100px"
+            android:gravity="center"
+           android:textSize="15sp"
+            android:background="@drawable/materials_shape"
+            android:textColor="@android:color/black"
+            android:drawableRight="@drawable/drop_down_unselected_icon"
+            android:layout_marginRight="100px">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/photo_image"
+            android:layout_width="match_parent"
+            android:layout_height="314px"
+            android:layout_marginTop="20px"
+            android:scaleType="fitXY"
+            android:src="@drawable/add_photo"
+            android:layout_marginLeft="100px"
+            android:layout_marginRight="100px"/>
+
+
+
+        <Button
+            android:id="@+id/bt_next"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_margin="25px"
+            android:background="@drawable/login_button"
+            android:textColor="@android:color/white"
+            android:text="下一步"/>
+
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

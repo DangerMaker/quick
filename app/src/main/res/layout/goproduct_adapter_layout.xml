@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/attach_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hui"
+        android:minHeight="120px"
+        android:paddingTop="20px"
+        android:paddingBottom="20px">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35px"
+            android:layout_marginRight="35px"
+            android:layout_toLeftOf="@+id/btn"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/black"
+           android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35px"
+            android:background="@drawable/shap_background_red_nopadding"
+            android:gravity="center"
+            android:lines="1"
+            android:minHeight="70px"
+            android:paddingLeft="20px"
+            android:paddingTop="15px"
+            android:paddingRight="20px"
+            android:paddingBottom="15px"
+            android:text="去交易"
+            android:textColor="@color/Theme_white"
+           android:textSize="15sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

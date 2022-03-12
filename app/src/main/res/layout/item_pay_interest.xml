@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:id="@+id/ll_item_my_subscription"
+              android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginBottom="30px"
+        android:layout_marginRight="30px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_black"
+            android:text="周期"/>
+
+        <TextView
+            android:id="@+id/seqNo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="60px"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/product_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginBottom="30px"
+        android:layout_marginRight="30px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_black"
+            android:text="起息日"/>
+
+        <TextView
+            android:id="@+id/startDate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="60px"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/product_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginBottom="30px"
+        android:layout_marginRight="30px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_black"
+            android:text="到期日"/>
+
+        <TextView
+            android:id="@+id/endDate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="60px"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/product_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginBottom="30px"
+        android:layout_marginRight="30px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_black"
+            android:text="期限(天)"/>
+
+        <TextView
+            android:id="@+id/deadline"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="60px"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/product_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginBottom="30px"
+        android:layout_marginRight="30px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_black"
+            android:text="确权日"/>
+
+        <TextView
+            android:id="@+id/payDate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="60px"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/product_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginBottom="30px"
+        android:layout_marginRight="30px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_black"
+            android:text="本金(元)"/>
+
+        <TextView
+            android:id="@+id/pripal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="60px"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/product_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginBottom="30px"
+        android:layout_marginRight="30px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_black"
+            android:text="利息(元)"/>
+
+        <TextView
+            android:id="@+id/income"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="60px"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/product_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginBottom="30px"
+        android:layout_marginRight="30px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_black"
+            android:text="总额(元)"/>
+
+        <TextView
+            android:id="@+id/totalAmount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="60px"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/product_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginBottom="30px"
+        android:layout_marginRight="30px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_black"
+            android:text="状态"/>
+
+        <TextView
+            android:id="@+id/statusName"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="60px"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@color/product_color"/>
+</LinearLayout>

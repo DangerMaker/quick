@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/reserve_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:background="@color/colorRed"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.hundsun.zjfae.common.view.CommonRadioGroup
+                    android:id="@+id/TopCelectBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:layout_below="@id/rl_top_bar"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/button_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:minWidth="160px"
+                        android:text="长期预约"
+                        android:textColor="@drawable/radio_bloue_to_white"
+                       android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/button_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-1.5px"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:minWidth="160px"
+                        android:text="短期预约"
+                        android:textColor="@drawable/radio_bloue_to_white"
+                       android:textSize="15sp" />
+
+                </com.hundsun.zjfae.common.view.CommonRadioGroup>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ic_back"
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35px"
+                android:scaleType="fitXY"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/tv_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35px"
+                android:text="规则"
+                android:textColor="@color/Theme_white" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

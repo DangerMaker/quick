@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/discount_coupon_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.hundsun.zjfae.activity.mine.DiscountCouponActivity">
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <include
+            android:id="@+id/ll_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/base_title" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+        <TextView
+            android:id="@+id/usable"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/discount_coupon_textcolor"
+            android:text="可用(0)"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25px"
+            android:layout_marginBottom="25px"
+            android:background="@color/product_color"/>
+        <TextView
+            android:id="@+id/lose_efficacy"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/discount_coupon_textcolor"
+            android:text="失效(0)"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25px"
+            android:layout_marginBottom="25px"
+            android:background="@color/product_color"/>
+
+        <TextView
+            android:id="@+id/usage"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/discount_coupon_textcolor"
+            android:text="已使用(0)"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:orientation="horizontal">
+
+
+        <View
+            android:id="@+id/left_view"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"/>
+
+        <View
+            android:id="@+id/center_view"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:id="@+id/right_view"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/product_color"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/discount_bg"
+        app:srlPrimaryColor="@color/colorRed"
+        app:srlAccentColor="@android:color/white"
+        android:descendantFocusability="blocksDescendants">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/discount_coupon_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <ImageView
+        android:id="@+id/no_discount_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/bg_kong"/>
+
+
+
+</LinearLayout>

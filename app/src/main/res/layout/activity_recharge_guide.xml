@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recharge_guide_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.hundsun.zjfae.activity.mine.RechargeGuideActivity">
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <include
+            android:id="@+id/ll_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/base_title" />
+
+    </RelativeLayout>
+
+
+    <com.hundsun.zjfae.common.view.WebViewWithProgress
+        android:id="@+id/content_webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </com.hundsun.zjfae.common.view.WebViewWithProgress>
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:text="关闭"
+        android:textColor="@android:color/white"
+        android:background="@drawable/login_button"
+        android:layout_marginRight="35px"
+        android:layout_marginLeft="35px"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="10px" />
+
+
+</LinearLayout>

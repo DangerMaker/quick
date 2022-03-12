@@ -1,0 +1,797 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "2:1170001067263158690",
+      "lastPropertyId": "26:6173410838738083970",
+      "name": "UserSetting",
+      "properties": [
+        {
+          "id": "1:7858451239906872294",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:5512723438681493793",
+          "name": "isUserAmountType",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "3:447397841741523769",
+          "name": "upLoadTime",
+          "type": 9
+        },
+        {
+          "id": "4:1883330034224023321",
+          "name": "ishomeIconsOutLogin",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "5:1969848526408721740",
+          "name": "ishomeSectionOutLogin",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "6:1806214651204175266",
+          "name": "isCheckUserName",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "7:1235778698315674817",
+          "name": "fingerprint_state",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "8:8275389826662210277",
+          "name": "gesture_state",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "9:4752537628238979827",
+          "name": "isHeadPic",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "11:1824341169164782796",
+          "name": "fingerprint_password",
+          "type": 9
+        },
+        {
+          "id": "12:364549398072265966",
+          "name": "fingerprint_password_before",
+          "type": 9
+        },
+        {
+          "id": "13:3627847991801985574",
+          "name": "crachUpLoadTime",
+          "type": 9
+        },
+        {
+          "id": "14:6411831663101645297",
+          "name": "blockchainPassWord",
+          "type": 9
+        },
+        {
+          "id": "15:6912172829638641024",
+          "name": "blockchainPassWord_before",
+          "type": 9
+        },
+        {
+          "id": "16:6910758891935993188",
+          "name": "blockchainState",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "23:787297415544105778",
+          "name": "isReplaceUser",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "26:6173410838738083970",
+          "name": "isAgreementShow",
+          "type": 1,
+          "flags": 4
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "8:8295022208043229251",
+      "lastPropertyId": "5:4376281787495504148",
+      "name": "AssetProof",
+      "properties": [
+        {
+          "id": "1:1543609742067492392",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:11046163984513502",
+          "name": "model",
+          "type": 9
+        },
+        {
+          "id": "3:7207857967982978613",
+          "name": "imagePath",
+          "type": 9
+        },
+        {
+          "id": "4:615197589288922697",
+          "name": "dynamicKey",
+          "type": 9
+        },
+        {
+          "id": "5:4376281787495504148",
+          "name": "dynamicValue",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "9:8577107545414179355",
+      "lastPropertyId": "5:2737972784142358010",
+      "name": "UnBindCard",
+      "properties": [
+        {
+          "id": "1:5011829946533571940",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:8845829967829963718",
+          "name": "model",
+          "type": 9
+        },
+        {
+          "id": "3:9220374817302024113",
+          "name": "imagePath",
+          "type": 9
+        },
+        {
+          "id": "4:3377440616494268591",
+          "name": "dynamicKey",
+          "type": 9
+        },
+        {
+          "id": "5:2737972784142358010",
+          "name": "dynamicValue",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "10:8057172156531860208",
+      "lastPropertyId": "13:4062840196774103923",
+      "name": "UserInfo",
+      "properties": [
+        {
+          "id": "1:2851710023289676943",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:5759618991082569445",
+          "name": "loginName",
+          "type": 9
+        },
+        {
+          "id": "3:7384175729510239516",
+          "name": "passWord",
+          "type": 9
+        },
+        {
+          "id": "4:3625285004892281698",
+          "name": "mobile",
+          "type": 9
+        },
+        {
+          "id": "5:5548426208190902819",
+          "name": "funtAccount",
+          "type": 9
+        },
+        {
+          "id": "6:3115398722491253763",
+          "name": "iconsUserType",
+          "type": 9
+        },
+        {
+          "id": "7:3175644730155674326",
+          "name": "tradeAccount",
+          "type": 9
+        },
+        {
+          "id": "8:8954846777495084927",
+          "name": "account",
+          "type": 9
+        },
+        {
+          "id": "9:6695338297570740413",
+          "name": "resTime",
+          "type": 9
+        },
+        {
+          "id": "10:1464583043380157836",
+          "name": "skipType",
+          "type": 9
+        },
+        {
+          "id": "11:4430131056901093677",
+          "name": "brokerNo",
+          "type": 9
+        },
+        {
+          "id": "12:4443539115280319140",
+          "name": "userType",
+          "type": 9
+        },
+        {
+          "id": "13:4062840196774103923",
+          "name": "isOpenChain",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "11:934874743495466671",
+      "lastPropertyId": "5:3422111302965475440",
+      "name": "ChangeCard",
+      "properties": [
+        {
+          "id": "1:8650258635417701820",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:7889543601439618408",
+          "name": "model",
+          "type": 9
+        },
+        {
+          "id": "3:4808066496485260038",
+          "name": "imagePath",
+          "type": 9
+        },
+        {
+          "id": "4:508673668782131869",
+          "name": "dynamicKey",
+          "type": 9
+        },
+        {
+          "id": "5:3422111302965475440",
+          "name": "dynamicValue",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "12:8609172534750465012",
+      "lastPropertyId": "12:2650623050538805383",
+      "name": "PhoneInfo",
+      "properties": [
+        {
+          "id": "1:4580463355168148226",
+          "name": "uid",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:3178050569849015412",
+          "name": "phoneNumber",
+          "type": 9
+        },
+        {
+          "id": "3:1155248935113929532",
+          "name": "clientOsver",
+          "type": 9
+        },
+        {
+          "id": "4:6139450706601335465",
+          "name": "deviceModal",
+          "type": 9
+        },
+        {
+          "id": "5:4043172751344466248",
+          "name": "deviceId",
+          "type": 9
+        },
+        {
+          "id": "6:5852198250048055409",
+          "name": "user_id",
+          "type": 9
+        },
+        {
+          "id": "7:3468192785264404052",
+          "name": "p",
+          "type": 9
+        },
+        {
+          "id": "8:2544313880656743875",
+          "name": "platform",
+          "type": 9
+        },
+        {
+          "id": "9:8244439016991800192",
+          "name": "appVersion",
+          "type": 9
+        },
+        {
+          "id": "10:367388515214933501",
+          "name": "phoneNumberStatus",
+          "type": 9
+        },
+        {
+          "id": "11:1138333046953220565",
+          "name": "routingAddress",
+          "type": 9
+        },
+        {
+          "id": "12:2650623050538805383",
+          "name": "channel",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "13:1300858612227080775",
+      "lastPropertyId": "5:8950789540820683357",
+      "name": "CacheConfiguration",
+      "properties": [
+        {
+          "id": "1:3229729799442743229",
+          "name": "cid",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3364895689619327245",
+          "name": "type",
+          "type": 9
+        },
+        {
+          "id": "3:460878306883022856",
+          "name": "content",
+          "type": 9
+        },
+        {
+          "id": "4:1231455382689899724",
+          "name": "resTime",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "14:3269673324566928589",
+      "lastPropertyId": "63:2165317784561564704",
+      "name": "BaseUserInfo",
+      "properties": [
+        {
+          "id": "1:4682109271114572995",
+          "name": "uid",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:7278609627068206541",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:3118281538118274719",
+          "name": "account",
+          "type": 9
+        },
+        {
+          "id": "4:3222492546274847785",
+          "name": "lastLoginTime",
+          "type": 9
+        },
+        {
+          "id": "5:9220726337122731404",
+          "name": "lastLoginTerminalName",
+          "type": 9
+        },
+        {
+          "id": "6:6611866570539980462",
+          "name": "fundAccount",
+          "type": 9
+        },
+        {
+          "id": "7:5679348581829003348",
+          "name": "tradeAccount",
+          "type": 9
+        },
+        {
+          "id": "8:4267275876305300243",
+          "name": "safeLevel",
+          "type": 9
+        },
+        {
+          "id": "9:7976457873870032932",
+          "name": "isBondedCard",
+          "type": 9
+        },
+        {
+          "id": "10:1433246475456529591",
+          "name": "isFundPasswordSet",
+          "type": 9
+        },
+        {
+          "id": "11:1774136008863783805",
+          "name": "isRiskTest",
+          "type": 9
+        },
+        {
+          "id": "12:407105550708795065",
+          "name": "isRiskExpired",
+          "type": 9
+        },
+        {
+          "id": "13:5170079797256137258",
+          "name": "isBondedMobile",
+          "type": 9
+        },
+        {
+          "id": "14:4311121327118942088",
+          "name": "mobile",
+          "type": 9
+        },
+        {
+          "id": "15:7850453599518852600",
+          "name": "isBondedEmail",
+          "type": 9
+        },
+        {
+          "id": "16:5693172772311707399",
+          "name": "email",
+          "type": 9
+        },
+        {
+          "id": "17:6787899037910478394",
+          "name": "isSecuritySet",
+          "type": 9
+        },
+        {
+          "id": "18:1595728920136216409",
+          "name": "certificateCode",
+          "type": 9
+        },
+        {
+          "id": "19:2463493220485220141",
+          "name": "certificateType",
+          "type": 9
+        },
+        {
+          "id": "20:6671198588706730512",
+          "name": "userType",
+          "type": 9
+        },
+        {
+          "id": "21:3283900284418588621",
+          "name": "riskLevel",
+          "type": 9
+        },
+        {
+          "id": "22:6132764228092061471",
+          "name": "riskExpiredDate",
+          "type": 9
+        },
+        {
+          "id": "23:6616932649468910269",
+          "name": "isOlderThan65",
+          "type": 9
+        },
+        {
+          "id": "24:9024890424541897833",
+          "name": "marketingChannel",
+          "type": 9
+        },
+        {
+          "id": "25:3751633972498864289",
+          "name": "actCode",
+          "type": 9
+        },
+        {
+          "id": "26:8006191405977116835",
+          "name": "brokerNo",
+          "type": 9
+        },
+        {
+          "id": "27:2829819223123578960",
+          "name": "recomandAccountName",
+          "type": 9
+        },
+        {
+          "id": "28:2037891087037665689",
+          "name": "firstBindCardTime",
+          "type": 9
+        },
+        {
+          "id": "29:3823384766779543645",
+          "name": "isProductBuy",
+          "type": 9
+        },
+        {
+          "id": "30:4746925675920031752",
+          "name": "isTransferBuy",
+          "type": 9
+        },
+        {
+          "id": "31:9024466089801352805",
+          "name": "registerTime",
+          "type": 9
+        },
+        {
+          "id": "32:8845139608865729375",
+          "name": "userGroup",
+          "type": 9
+        },
+        {
+          "id": "33:7751217632604018380",
+          "name": "isNewCustomer",
+          "type": 9
+        },
+        {
+          "id": "34:1680172741871587252",
+          "name": "isFirstLogin",
+          "type": 9
+        },
+        {
+          "id": "35:2841702704803432608",
+          "name": "riskAssessment",
+          "type": 9
+        },
+        {
+          "id": "36:3862467460475565530",
+          "name": "cifsel",
+          "type": 9
+        },
+        {
+          "id": "37:5702043932841090145",
+          "name": "changeCardStatus",
+          "type": 9
+        },
+        {
+          "id": "38:4055722078586076583",
+          "name": "unbindCardStatus",
+          "type": 9
+        },
+        {
+          "id": "39:9105063305434075545",
+          "name": "highNetWorthStatus",
+          "type": 9
+        },
+        {
+          "id": "40:1585817581754404410",
+          "name": "userInfoStatus",
+          "type": 9
+        },
+        {
+          "id": "41:7889387452603141749",
+          "name": "accreditedTime",
+          "type": 9
+        },
+        {
+          "id": "42:3366979345807254278",
+          "name": "accreditedFlag",
+          "type": 9
+        },
+        {
+          "id": "43:663765398191225591",
+          "name": "accreditedSqTime",
+          "type": 9
+        },
+        {
+          "id": "44:7809339792769555559",
+          "name": "isAccreditedInvestor",
+          "type": 9
+        },
+        {
+          "id": "45:7537740275794900754",
+          "name": "certificateCodeAll",
+          "type": 9
+        },
+        {
+          "id": "46:5804901052495167597",
+          "name": "userId",
+          "type": 9
+        },
+        {
+          "id": "47:5723280475781560754",
+          "name": "canAutoUpgrade",
+          "type": 9
+        },
+        {
+          "id": "48:693550949601630323",
+          "name": "maxUserGroup",
+          "type": 9
+        },
+        {
+          "id": "49:1636284748819439754",
+          "name": "isArtificialGrade",
+          "type": 9
+        },
+        {
+          "id": "50:159279220383932056",
+          "name": "gradeTime",
+          "type": 9
+        },
+        {
+          "id": "51:8190664959875124477",
+          "name": "maxValue",
+          "type": 9
+        },
+        {
+          "id": "52:6734667122814019948",
+          "name": "maxValueTime",
+          "type": 9
+        },
+        {
+          "id": "53:1801774836991481702",
+          "name": "operId",
+          "type": 9
+        },
+        {
+          "id": "54:3969621206112697001",
+          "name": "operName",
+          "type": 9
+        },
+        {
+          "id": "55:6624332726406696735",
+          "name": "accreditedChannel",
+          "type": 9
+        },
+        {
+          "id": "56:2544552527552660111",
+          "name": "accreditedDbTime",
+          "type": 9
+        },
+        {
+          "id": "57:1721233154820910371",
+          "name": "isRealInvestor",
+          "type": 9
+        },
+        {
+          "id": "58:7092334882557256208",
+          "name": "iconsUserType",
+          "type": 9
+        },
+        {
+          "id": "59:2345126356901282966",
+          "name": "verifyName",
+          "type": 9
+        },
+        {
+          "id": "60:7163383241593791066",
+          "name": "showLevel",
+          "type": 9
+        },
+        {
+          "id": "61:3725647451483375263",
+          "name": "accreditedTipsFlag",
+          "type": 9
+        },
+        {
+          "id": "62:630545972557402119",
+          "name": "whiteGroup",
+          "type": 9
+        },
+        {
+          "id": "63:2165317784561564704",
+          "name": "certificateStatusType",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "15:9130298523566871705",
+      "lastPropertyId": "3:8436351108155901513",
+      "name": "UserAgreementSetting",
+      "properties": [
+        {
+          "id": "1:4602996116115236591",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4133750432922515563",
+          "name": "account",
+          "type": 9
+        },
+        {
+          "id": "3:8436351108155901513",
+          "name": "agreementVersion",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "15:9130298523566871705",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [
+    1361511066147242427,
+    4945056641513192424,
+    7234573001673457648,
+    3646466496229354550,
+    7375130647056079271,
+    5109171186602188578
+  ],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    3122685133382519623,
+    7534674311749931529,
+    8743208065869140200,
+    3783573790919435387,
+    139879055017939425,
+    1208711054264939181,
+    1864302758319818030,
+    4855949594541478110,
+    7853352698769258460,
+    5285089682188894669,
+    3543875892027713975,
+    778177209258189199,
+    3362079931926352849,
+    6214739392894899063,
+    1009853472754291082,
+    3941258836317791227,
+    5159481347552154402,
+    4873509249715567516,
+    3044542218113168912,
+    7477974292276775686,
+    6425938170300709013,
+    6649401030657647961,
+    323278857162290631,
+    550293063572313272,
+    9003703872533302022,
+    2203536519711096279,
+    7564552919163821052,
+    4701028640709219929,
+    2737821525503802688,
+    2987349187804806018,
+    5504964277360749667,
+    4059519034029935831,
+    5107164146900936992,
+    2708410652436350080,
+    2336782403927740153,
+    697855471445378403,
+    8950789540820683357,
+    3904937814205797480,
+    7567007905820981737,
+    6862745061835864410,
+    8794489701889744940,
+    4284375741251128107,
+    2465797386141128741,
+    1435245158160699785,
+    3375123385737296102
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}

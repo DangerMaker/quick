@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_total_income"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Theme_white"
+    android:orientation="vertical"
+    tools:context="com.hundsun.zjfae.fragment.account.TotalIncomeActivity">
+
+    <include
+        android:id="@+id/ll_top_bar"
+        layout="@layout/base_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15px"
+        android:paddingBottom="15px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="累计已实现(元)"
+                android:textColor="@color/black"
+                android:paddingBottom="15px"
+               android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_allProfit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+               android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGeneral" />
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="到期总预计收益(元)"
+                android:textColor="@color/black"
+                android:paddingBottom="15px"
+               android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_maturityProfitSum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hui">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            android:text="数据统计更新存在一定的延时"
+            android:textColor="@color/black"
+           android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_margin="15px"
+        android:gravity="center_vertical"
+        android:text="累计已实现收益明细"
+        android:textColor="@color/black"
+       android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGeneral" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:descendantFocusability="blocksDescendants"
+        app:srlAccentColor="@android:color/white"
+        app:srlPrimaryColor="@color/colorRed">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Theme_white"
+                android:overScrollMode="never"></android.support.v7.widget.RecyclerView>
+
+            <include layout="@layout/layout_no_net_data" />
+        </RelativeLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

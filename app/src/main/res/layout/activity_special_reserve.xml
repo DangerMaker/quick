@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_special_reserve"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.hundsun.zjfae.activity.productreserve.SpecialReserveActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+
+        <include
+            android:id="@+id/ll_top_bar"
+            layout="@layout/base_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35px"
+            android:text="规则"
+            android:textColor="@color/Theme_white"
+           android:textSize="15sp" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal"
+                android:paddingLeft="35px"
+                android:paddingRight="35px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:text="预约交易时间"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10px"
+                    android:text="" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGeneral" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal"
+                android:paddingLeft="35px"
+                android:paddingRight="35px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:text="预约产品期限"
+                   android:textSize="15sp" />
+
+                <EditText
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40px"
+                    android:background="@null"
+                    android:hint="开始"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="天-"
+                   android:textSize="15sp" />
+
+                <EditText
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40px"
+                    android:background="@null"
+                    android:hint="结束"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="天"
+                   android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGeneral" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:orientation="horizontal"
+                android:paddingLeft="35px"
+                android:paddingRight="35px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:singleLine="true"
+                    android:text="预约产品期限不超过180天"
+                    android:textColor="@color/colorGeneral"
+                   android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGeneral" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal"
+                android:paddingLeft="35px"
+                android:paddingRight="35px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:text="预约金额"
+                   android:textSize="15sp" />
+
+                <EditText
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80px"
+                    android:background="@null"
+                    android:hint="50000"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="元"
+                    android:textColor="@color/red" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGeneral" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="35px"
+                android:paddingRight="35px">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="交易金额不小于50000元"
+                    android:textColor="@color/colorGeneral"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="交易递增金额1,000.00元"
+                    android:textColor="@color/colorGeneral"
+                   android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGeneral" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal"
+                android:paddingLeft="35px"
+                android:paddingRight="35px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:text="保证金"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="80px"
+                    android:gravity="center"
+                    android:text="--"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="元"
+                   android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGeneral" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="保证金比例14.00%"
+                android:textColor="@color/colorGeneral"
+               android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="50px"
+                android:orientation="horizontal"
+                android:paddingLeft="35px"
+                android:paddingRight="35px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:text="收益参考"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="80px"
+                    android:gravity="center"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_margin="35px"
+                android:background="@drawable/login_button"
+                android:enabled="false"
+                android:text="敬请期待"
+                android:textColor="@color/Theme_white" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

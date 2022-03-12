@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/custom_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/product_color"
+    tools:context=".activity.mine.CareerSelsectActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentTop="true">
+        <include
+            android:id="@+id/ll_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            layout="@layout/base_title" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25px"
+            android:paddingBottom="25px"
+            android:paddingLeft="25px"
+            android:gravity="center|left"
+            android:textSize="14sp"
+            android:background="@android:color/white"
+            android:text="@string/career_description"/>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/career_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="45px"
+            android:paddingLeft="25px"
+            android:paddingBottom="45px"
+            android:paddingRight="25px"
+            android:layout_marginTop="20px"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/careerName"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:text="@string/select_career"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_gravity="center"
+                android:background="@drawable/right_back"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="35px"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/career_cancel"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="15px"
+            android:background="@drawable/product_buy"
+            android:text="取消"/>
+
+
+        <Button
+            android:id="@+id/career_commit"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="15px"
+            android:background="@drawable/face_authorisation_button_checked_shape"
+            android:textColor="@android:color/white"
+            android:text="确认"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

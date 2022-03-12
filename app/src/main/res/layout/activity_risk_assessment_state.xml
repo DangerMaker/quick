@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_risk_assessment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.hundsun.zjfae.activity.mine.RiskAssessmentStateActivity">
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentTop="true">
+
+        <include
+            android:id="@+id/ll_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            layout="@layout/base_title"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="风险承受能力评估结果"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="60px"
+        android:layout_marginBottom="60px"
+        android:textColor="@color/colorRed"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="您的风险承受能力等级"
+       android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"/>
+
+
+    <ImageView
+        android:id="@+id/iv_risk"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_no_risklevel"
+        android:layout_marginTop="60px"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="50px"
+        android:background="@color/product_color"/>
+
+
+    <TextView
+        android:id="@+id/tv_risk_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:textColor="@color/colorRed"
+        android:gravity="center"
+       android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+       android:textSize="15sp"
+        android:text="声明：在投资者风险能力测试过程中，本人提供的全部信息、资料是真实、准确和完整的，测试结果真实、准确的反映了本人的投资风险承受程度。"/>
+
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:layout_marginRight="5px"
+        android:layout_marginLeft="5px"
+        android:background="@drawable/login_button"
+        android:text="返回"
+       android:textSize="15sp"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

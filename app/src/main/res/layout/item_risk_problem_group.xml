@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_problem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/purchase_bg"
+        android:padding="15dp"
+        android:textColor="#000"
+       android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="风险承受能力评估问卷"
+        android:textColor="#333"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/bt_complete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/account_button_selector"
+        android:text="完成"
+        android:textColor="@android:color/white" />
+</LinearLayout>

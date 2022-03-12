@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.hundsun.zjfae",
+  "variantName": "zjfae_proRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [],
+      "versionCode": 10980,
+      "versionName": "1.9.8",
+      "enabled": true,
+      "outputFile": "浙金中心-生产-1.9.8-2022年03月12日14时11分.apk"
+    }
+  ]
+}

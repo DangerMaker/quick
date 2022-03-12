@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/certification_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.mine.CertificationActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentTop="true">
+        <include
+            android:id="@+id/ll_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            layout="@layout/base_title" />
+
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="290px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/ln_id_card_layout"
+                    android:layout_width="330px"
+                    android:layout_height="200px">
+
+
+                    <ImageView
+                        android:id="@+id/frontFullImage"
+                        android:layout_width="330px"
+                        android:layout_height="200px"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/id_card_image"/>
+
+                    <ImageView
+                        android:id="@+id/watermark_full"
+                        android:layout_width="330px"
+                        android:layout_height="200px"
+                        android:visibility="gone"
+                        android:background="@drawable/bank_watermark"/>
+
+
+                    <ImageView
+                        android:id="@+id/frontFullImage_camera"
+                        android:layout_width="104px"
+                        android:layout_height="100px"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/id_camera"/>
+
+
+                    <ImageView
+                        android:id="@+id/frontFullImage_q_code"
+                        android:layout_width="54px"
+                        android:layout_height="47px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5px"
+                        android:layout_marginBottom="10px"
+                        android:visibility="gone"
+                        android:src="@drawable/q_code"/>
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/backFullImage_layout"
+                    android:layout_width="330px"
+                    android:layout_height="200px"
+                    android:layout_marginLeft="25px">
+
+                    <ImageView
+                        android:id="@+id/backFullImage"
+                        android:layout_width="330px"
+                        android:layout_height="200px"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/id_card"/>
+
+                    <ImageView
+                        android:id="@+id/watermark_backfull"
+                        android:layout_width="330px"
+                        android:layout_height="200px"
+                        android:visibility="gone"
+                        android:background="@drawable/bank_watermark"/>
+
+                    <ImageView
+                        android:id="@+id/backFullImage_camera"
+                        android:layout_width="104px"
+                        android:layout_height="100px"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/id_camera"/>
+
+
+                    <ImageView
+                        android:id="@+id/backFullImage_q_code"
+                        android:layout_width="54px"
+                        android:layout_height="47px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5px"
+                        android:layout_marginBottom="10px"
+                        android:visibility="gone"
+                        android:src="@drawable/q_code"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="@color/product_color"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="45px"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="25px"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="身份信息"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="25px"
+                    android:paddingBottom="25px"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="215px"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text="姓        名"/>
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#646464"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:background="@color/product_color"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="25px"
+                    android:paddingBottom="25px"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="215px"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text="身份证号"/>
+
+                    <TextView
+                        android:id="@+id/tv_idCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#646464"
+                        android:textSize="16sp" />
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:background="@color/product_color"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="25px"
+                    android:paddingBottom="25px"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="215px"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text="有效期限"/>
+
+                    <TextView
+                        android:id="@+id/tv_validDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#646464"
+                        android:textSize="16sp" />
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:background="@color/product_color"/>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#F37111"
+        android:text="请确认身份信息无误，证件图片完整清晰"/>
+
+    <Button
+        android:id="@+id/comit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="身份信息无误，提交"
+        android:layout_margin="25px"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/login_button"/>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

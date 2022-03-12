@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/goproduct_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="364dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:background="@drawable/frame_shape_white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/notice_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="温馨提示"
+                    android:textColor="@color/red_900"
+                   android:textSize="15sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/white" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/cancel_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:scaleType="center"
+                android:src="@drawable/notice_clean" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

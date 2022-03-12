@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hundsun.zjfae">
+
+    <uses-permission android:name="android.permission.REPLACE_EXISTING_PACKAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 必须的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 推荐的权限 -->
+    <!-- 添加如下权限，以便使用更多的第三方SDK和更精准的统计数据 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".common.base.BaseApplication"
+        android:allowBackup="true"
+        android:extractNativeLibs="true"
+        android:icon="@mipmap/logo"
+        android:label="${APP_NAME}"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:resizeableActivity="true"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:extractNativeLibs,allowBackup,android:label">
+        <activity
+            android:name=".activity.product.SelectConditionTransferListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.productreserve.SpecialReserveRuleActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.moneymanagement.LookSpvProductDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.product.RecordTransactionDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.product.SpvProductPlayActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.product.SpvProductDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 首页 -->
+        <activity
+            android:name=".HomeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 登录 -->
+        <!-- 注册 -->
+        <activity
+            android:name=".activity.register.RegisterActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- webview -->
+        <activity
+            android:name=".activity.home.WebActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/WebViewActivityTheme"
+            android:windowSoftInputMode="adjustPan" /> <!-- 认购产品详情 -->
+        <activity
+            android:name=".activity.product.ProductCodeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 启动页 -->
+        <activity
+            android:name=".activity.splash.StartActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Launcher"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.splash.SplashActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 认购支付页 -->
+        <activity
+            android:name=".activity.product.ProductPlayActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 认购支付状态页 -->
+        <activity
+            android:name=".activity.product.ProductPlayStateActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- PDF -->
+        <activity
+            android:name=".activity.product.OpenAttachmentActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 消息Activity -->
+        <activity
+            android:name=".activity.home.MessageActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 客服聊天 -->
+        <activity
+            android:name=".activity.home.CustomerServerActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" /> <!-- 银行卡 -->
+        <activity
+            android:name=".activity.mine.BankCardActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 添加银行卡 -->
+        <activity
+            android:name=".activity.mine.BankCardCertificationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 银行卡身份认证 -->
+        <activity
+            android:name=".activity.mine.AddBankActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 选择银行 -->
+        <activity
+            android:name=".activity.mine.ChooseBankActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 绑卡成功 -->
+        <activity
+            android:name=".activity.mine.AddBankStateActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 解绑银行卡 -->
+        <activity
+            android:name=".activity.mine.DeleteBankStateActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 银行卡流水 -->
+        <activity
+            android:name=".activity.mine.BankCardDynamicActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 可支持银行 -->
+        <activity
+            android:name=".activity.mine.SupportBankActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!--  -->
+        <activity
+            android:name=".activity.mine.RechargeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 提现 -->
+        <activity
+            android:name=".activity.mine.WithdrawalActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 优惠券 -->
+        <activity
+            android:name=".activity.mine.DiscountCouponActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 红包 -->
+        <activity
+            android:name=".activity.mine.EnvelopeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 其他卡券 -->
+        <activity
+            android:name=".activity.mine.OtherVouchersActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 选择优惠券 -->
+        <activity
+            android:name=".activity.product.ChooseQuanActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 选择红包 -->
+        <activity
+            android:name=".activity.product.ChooseBaoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 转让详情 -->
+        <activity
+            android:name=".activity.product.TransferDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 转让支付 -->
+        <activity
+            android:name=".activity.product.TransferDetailPlayActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- zhoujianyu -->
+        <!-- 产品预约 -->
+        <activity
+            android:name=".activity.productreserve.ProductReserveActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 我的个性化预约 -->
+        <activity
+            android:name=".activity.productreserve.MyReserveActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 长期预约与短期预约界面 -->
+        <activity
+            android:name=".activity.productreserve.ReserveListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 长期或者短期预约详情 -->
+        <activity
+            android:name=".activity.productreserve.LongorShortReserveDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 个性化预约 -->
+        <activity
+            android:name=".activity.productreserve.SpvReserveProductDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- SPV个性化预约 -->
+        <activity
+            android:name=".activity.productreserve.SpvReserveProductPlayActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- SPV个性化预约 -->
+        <activity
+            android:name=".activity.productreserve.SpecialReserveActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 我的个性化预约详情 -->
+        <activity
+            android:name=".activity.productreserve.MyReserveDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 总收益 -->
+        <activity
+            android:name=".fragment.account.TotalIncomeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 资产明细 -->
+        <activity
+            android:name=".fragment.account.AssetDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 资金流水 -->
+        <activity
+            android:name=".activity.assetstream.AssetStreamActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 我的消息 -->
+        <activity
+            android:name=".activity.mymessage.MyMessageActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 我的邀请 -->
+        <activity
+            android:name=".activity.myinvitation.MyInvitationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 推荐明细 -->
+        <activity
+            android:name=".activity.myinvitation.InvitationListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 我的分享 -->
+        <activity
+            android:name=".activity.more.MyShareActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 联系我们 -->
+        <activity
+            android:name=".activity.more.ContactUsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 扫码界面 -->
+        <activity
+            android:name=".activity.scan.activity.ScanActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 用户个人信息界面 -->
+        <activity
+            android:name=".activity.home.ActivityUserInfo"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 职业和学历选择界面 -->
+        <activity
+            android:name=".activity.home.OccupationorEducationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 图片裁剪选择界面 -->
+        <activity
+            android:name=".activity.home.CropViewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 我的预约进入产品详情 -->
+        <activity
+            android:name=".activity.productreserve.ReserveProductDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 产品预约规则界面 -->
+        <activity
+            android:name=".activity.productreserve.ReserveRuleActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 产品预约支付界面 -->
+        <activity
+            android:name=".activity.productreserve.ReservePayActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 我的消息详情页 -->
+        <activity
+            android:name=".activity.mymessage.MyMessageDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 创建手势密码界面 -->
+        <activity
+            android:name=".activity.logingesture.CreateGestureActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 关闭手势密码以及登录的时候手势登录界面 -->
+        <activity
+            android:name=".activity.logingesture.GestureLoginActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 关注我们 -->
+        <activity
+            android:name=".activity.more.FollowUsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- yangtianren -->
+        <!-- 账户中心 -->
+        <activity
+            android:name=".activity.accountcenter.AccountCenterActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 修改交易密码 -->
+        <activity
+            android:name=".activity.accountcenter.ModifyPasswordActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 修改密码成功 -->
+        <activity
+            android:name=".activity.accountcenter.ModifySuccessActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 风险评测 -->
+        <activity
+            android:name=".activity.accountcenter.RiskAssessmentActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 重置交易密码 -->
+        <!-- 身份验证 -->
+        <activity
+            android:name=".activity.accountcenter.AuthenticationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 风险评测 -->
+        <activity
+            android:name=".activity.accountcenter.RiskAssessmentProblemActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 绑定新手机 -->
+        <activity
+            android:name=".activity.accountcenter.BindNewPhoneActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 设置安保问题 -->
+        <activity
+            android:name=".activity.accountcenter.SettingSecurityIssuesActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 设置安保问题 -->
+        <activity
+            android:name=".activity.accountcenter.SettingSecurityIssuesAuthenticationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 设置安保问题 -->
+        <activity
+            android:name=".activity.accountcenter.SecurityIssuesDisplayActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 我的理财 -->
+        <activity
+            android:name=".activity.moneymanagement.MyMoneyManagementActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 我的持仓 -->
+        <activity
+            android:name=".activity.moneymanagement.MyHoldingActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="我的资产"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 我的持仓详情 -->
+        <activity
+            android:name=".activity.moneymanagement.HoldingDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 我要卖 -->
+        <activity
+            android:name=".activity.moneymanagement.SellActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 我的认购 -->
+        <activity
+            android:name=".activity.moneymanagement.MySubscriptionActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 我的认购详情 -->
+        <activity
+            android:name=".activity.moneymanagement.SubscriptionDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 我的认购产品详情 -->
+        <activity
+            android:name=".activity.moneymanagement.HoldProductCodeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 付息明细 -->
+        <activity
+            android:name=".activity.moneymanagement.PayInterestDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 确认卖出 -->
+        <activity
+            android:name=".activity.moneymanagement.ConfirmSellActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 我的委托 -->
+        <activity
+            android:name=".activity.moneymanagement.MyEntrustActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 我的委托详情 -->
+        <activity
+            android:name=".activity.moneymanagement.EntrustDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 交易记录 -->
+        <activity
+            android:name=".activity.moneymanagement.RecordTransactionActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 持仓流水 -->
+        <activity
+            android:name=".activity.moneymanagement.HoldingWaterActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 注册成功 -->
+        <activity
+            android:name=".activity.register.RegisterStateActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- yangtianren -->
+        <!-- 忘记密码 -->
+        <activity
+            android:name=".activity.forget.ForgetPasswordActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 忘记密码发送验证码 -->
+        <activity
+            android:name=".activity.forget.ForgetPasswordValidateCode"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 忘记密码设置密码 -->
+        <activity
+            android:name=".activity.forget.ForgetPasswordSetActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 支行选择 -->
+        <activity
+            android:name=".activity.mine.LoadProvinceActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 充值引导 -->
+        <activity
+            android:name=".activity.mine.RechargeGuideActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 上传用户日志服务 -->
+        <service
+            android:name=".common.service.UpLoadFileJobIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- 生产：1f7750cf6b0fe011b1d43ef24788695d -->
+        <!-- 首次设置交易密码 -->
+        <activity
+            android:name=".activity.mine.FirstPlayPassWordActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 合格投资者资产证明 -->
+        <activity
+            android:name=".activity.home.HighNetWorthMaterialsUploadedActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 合格投资者资产上传列表 -->
+        <activity
+            android:name=".activity.home.HighNetWorthUploadActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 详细说明 -->
+        <activity
+            android:name=".activity.home.DescriptionActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 银行卡管理 -->
+        <activity
+            android:name=".activity.mine.BankCardManagementActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 人脸识别 -->
+        <!-- 资料上传 -->
+        <activity
+            android:name=".activity.mine.UnbindBankCardUploadActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 线下充值 -->
+        <activity
+            android:name=".activity.mine.OfflineRechargeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 机构用户线下充值 -->
+        <activity
+            android:name=".activity.mine.CompanyOfflineRechargeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 人脸识别 -->
+        <!-- 人脸识别协议 -->
+        <activity
+            android:name=".activity.mine.FaceAuthorisationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 解绑卡/换卡资料上传列表 -->
+        <activity
+            android:name=".activity.mine.UnbindBankCardMaterialsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 账户等级 -->
+        <activity
+            android:name=".activity.mine.AccountLevelActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.product.HighActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 65周岁风险提示页面 -->
+        <activity
+            android:name=".activity.product.AgeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 风险承受能力评估结果 -->
+        <activity
+            android:name=".activity.mine.RiskAssessmentStateActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 浦发商户快捷支付业务客户服务协议 -->
+        <activity
+            android:name=".activity.mine.OpenAssetsAttachmentActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 充值授权书 -->
+        <activity
+            android:name=".activity.mine.AgreementActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 高净值专区 -->
+        <activity
+            android:name=".activity.mine.ProductHighTransferOrderListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 人脸识别成功解绑 Activity -->
+        <activity
+            android:name=".activity.mine.FaceDeleteBankActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 换卡 -->
+        <activity
+            android:name=".activity.mine.ChangeCardActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 基金资产详情 -->
+        <activity
+            android:name=".activity.moneymanagement.HoldingFundDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 换卡成功 -->
+        <activity
+            android:name=".activity.mine.ChangeCardStateActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.mine.OfflineRechargeWebActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 预约认购支付界面 -->
+        <activity
+            android:name=".activity.productreserve.ReserveProductPlayActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 免责声明 -->
+        <activity
+            android:name=".activity.product.DisclaimerActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 解绑卡状态 -->
+        <activity
+            android:name=".activity.mine.DeleteBankStataActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.mine.CertificationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="身份认证"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.mine.CareerSelsectActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="职业选择"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.mine.CertificationStatus"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.home.X5WebActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+    </application>
+
+</manifest>

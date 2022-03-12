@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/image_upload_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.hundsun.zjfae.activity.home.HighNetWorthUploadActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:orientation="horizontal"
+        android:background="@color/colorRed">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="35px"
+            android:paddingRight="35px"
+            android:text="返回"
+           android:textSize="15sp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="资料上传列表"
+           android:textSize="15sp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/compile_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="35px"
+            android:paddingRight="35px"
+            android:text="编辑"
+           android:textSize="15sp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/slide_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+    <LinearLayout
+        android:id="@+id/check_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorRed"
+            android:gravity="center|left"
+            android:paddingLeft="15px"
+            android:paddingRight="15px"
+            android:text="本人郑重申明为申请成为浙金中心“合格投资者”会员所上传的金融资产证明为现在真实存在的金融资产，本人愿为上传的金融资产证明的真实性负责。"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/part_button"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="25px"
+        android:layout_marginLeft="45px"
+        android:layout_marginRight="45px"
+        android:text="提交"
+        android:clickable="false"
+        android:focusable="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/product_buy"/>
+
+
+    <Button
+        android:id="@+id/clean_button"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="25px"
+        android:layout_marginLeft="45px"
+        android:layout_marginRight="45px"
+        android:layout_marginBottom="45px"
+        android:text="取消上传"
+        android:textColor="@android:color/white"
+        android:background="@drawable/login_button"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/transfer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@android:color/white">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_transfer_shape"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/logo" />
+
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/productName"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="7dp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black" />
+
+            <ImageView
+                    android:id="@+id/my_entry"
+                    android:layout_width="15dp"
+                    android:layout_height="54dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginRight="1dp"
+                    android:visibility="gone"
+                    android:src="@drawable/my_entry" />
+
+            <ImageView
+                    android:id="@+id/type"
+                    android:layout_width="15dp"
+                    android:layout_height="54dp"
+                    android:visibility="gone"
+                    android:scaleType="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:id="@+id/targetRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorRed"
+                        android:textSize="18sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorGeneral"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/transfer_earnings" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:id="@+id/leastTranAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorRed" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorGeneral"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="起购本金（元）" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:id="@+id/leftDays"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorRed" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorGeneral"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="剩余（天）" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:id="@+id/delegateAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorRed" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorGeneral"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="转让价格（元）" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/load_province_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.hundsun.zjfae.activity.mine.LoadProvinceActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rl_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+            <include
+                android:id="@+id/ll_top_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/base_title" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_top_bar">
+            <com.hundsun.zjfae.common.view.DropDownMenu
+                android:id="@+id/dropDownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:dddividerColor="@color/gray"
+                app:ddmaskColor="@color/mask_color"
+                app:ddmenuBackgroundColor="@color/white"
+                app:ddmenuIconOrientation="right"
+                app:ddmenuSelectedIcon="@drawable/up"
+                app:ddmenuTextSize="13sp"
+                app:dddividerHeight="10dp"
+                app:ddmenuUnselectedIcon="@drawable/drop_down_unselected_icon"
+                app:ddtextSelectedColor="@color/colorRed"
+                app:ddtextUnselectedColor="@color/gray"
+                app:ddunderlineColor="@color/gray">
+
+            </com.hundsun.zjfae.common.view.DropDownMenu>
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/city_recycler"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:scrollbars="none"-->
+                <!--android:layout_marginRight="30px">-->
+            <!--</android.support.v7.widget.RecyclerView>-->
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

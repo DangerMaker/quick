@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/item_bank_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingLeft="15px"
+            android:gravity="center|left"
+            android:text="时间："/>
+
+        <TextView
+            android:id="@+id/gmtCreate"
+            android:layout_width="0px"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center|left" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingLeft="15px"
+            android:gravity="center|left"
+            android:text="银行："/>
+
+        <TextView
+            android:id="@+id/bankName"
+            android:layout_width="0px"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center|left" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingLeft="15px"
+            android:gravity="center|left"
+            android:text="卡号："/>
+
+        <TextView
+            android:id="@+id/bankCard"
+            android:layout_width="0px"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center|left" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingLeft="15px"
+            android:gravity="left|center"
+            android:text="状态："/>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="0px"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="left|center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingLeft="15px"
+            android:gravity="left|center"
+            android:text="操作类型："/>
+
+        <TextView
+            android:id="@+id/status_type"
+            android:layout_width="0px"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="left|center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingLeft="15px"
+            android:gravity="left|center"
+            android:text="备注："/>
+
+        <TextView
+            android:id="@+id/remark"
+            android:layout_width="0px"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="left|center" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="@color/product_color"/>
+</LinearLayout>

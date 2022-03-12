@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hundsun.zjfae.common.view.CustomLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_record_transaction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    app:titleText="@string/activity_record_transaction_title">
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:descendantFocusability="blocksDescendants"
+        app:srlAccentColor="@android:color/white"
+        app:srlPrimaryColor="@color/colorRed">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_record_transaction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Theme_white"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                android:overScrollMode="never" />
+
+            <include layout="@layout/layout_no_net_data" />
+        </RelativeLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</com.hundsun.zjfae.common.view.CustomLinearLayout>

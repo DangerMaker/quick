@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package onight.zjfae.afront;
+
+option java_outer_classname="ProtoBufParse";
+
+
+
+message protoBuf_base_parse_info{
+
+
+}
+
+
+
+message Ret_protoBuf_base_parse{
+
+
+	string returnCode=1;	//报文头
+
+	string returnMsg=2;	//报文头
+	
+
+
+}
+
+
+
+
+
+
+message REQ_protoBuf_base_parse{
+
+
+
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/agreement_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.hundsun.zjfae.activity.mine.AgreementActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentTop="true">
+        <include
+            android:id="@+id/ll_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            layout="@layout/base_title" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15px"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/agreement_t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+
+
+
+
+            <TextView
+                android:id="@+id/agreement_t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:textSize="15sp"
+                android:textColor="@android:color/black"/>
+
+
+            <TextView
+                android:id="@+id/agreement_t3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+
+            <TextView
+                android:id="@+id/agreement_t4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:textSize="15sp"
+                android:textColor="@android:color/black"/>
+
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_my_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.hundsun.zjfae.activity.mymessage.MyMessageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px">
+
+        <include
+            android:id="@+id/ll_top_bar"
+            layout="@layout/base_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_read"
+            android:layout_width="wrap_content"
+            android:layout_height="98px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35px"
+            android:gravity="center"
+            android:text="批量已读"
+            android:textColor="@color/Theme_white"
+           android:textSize="15sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lin_bottom"
+            android:background="@android:color/white"
+            android:descendantFocusability="blocksDescendants"
+            app:srlAccentColor="@android:color/white"
+            app:srlPrimaryColor="@color/colorRed">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/Theme_white"
+                    android:overScrollMode="never"></android.support.v7.widget.RecyclerView>
+
+                <include layout="@layout/layout_no_net_data" />
+            </RelativeLayout>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="101px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/Theme_white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGeneral" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px">
+
+                <TextView
+                    android:id="@+id/tv_nums"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="35px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="已选 0 条" />
+
+                <Button
+                    android:id="@+id/btn_check_all"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15px"
+                    android:layout_marginRight="35px"
+                    android:layout_marginBottom="15px"
+                    android:layout_weight="2"
+                    android:background="@drawable/login_button"
+                    android:gravity="center"
+                    android:text="全选"
+                    android:textColor="@color/Theme_white"
+                   android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

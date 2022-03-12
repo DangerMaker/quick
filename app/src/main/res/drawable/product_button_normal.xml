@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/colorRed" />
+
+    <stroke android:width="1px" android:color="@android:color/white" />
+    <!-- //边缘颜色   按钮四个圆角="" -->
+    <corners android:bottomLeftRadius="10px" android:bottomRightRadius="0px" android:topLeftRadius="10px" android:topRightRadius="0px" />
+
+</shape>

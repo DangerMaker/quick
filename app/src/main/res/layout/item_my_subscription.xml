@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_my_subscription"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="-40px"
+    android:background="@drawable/bg_venue_default"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="60px"
+        android:layout_marginRight="60px"
+        android:layout_marginBottom="30px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10px"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shap_background_red_nopadding"
+            android:gravity="center"
+            android:minWidth="100px"
+            android:minHeight="50px"
+            android:paddingLeft="20px"
+            android:paddingTop="15px"
+            android:paddingRight="20px"
+            android:paddingBottom="15px"
+            android:text="撤单"
+            android:textColor="@android:color/white"
+           android:textSize="15sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:background="#dfdfdf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="10px"
+        android:layout_marginRight="60px"
+        android:layout_marginBottom="60px"
+        android:minHeight="140px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_subscribed_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/colorGeneral" />
+                <LinearLayout
+                    android:id="@+id/lin_kq1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center_horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="32px"
+                            android:layout_height="32px"
+                            android:layout_gravity="center"
+                            android:src="@drawable/question" />
+
+                        <TextView
+                            android:id="@+id/tv_kqvalue1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="交易金额（元）"
+                android:textColor="@color/colorGeneral" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_subscription_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/colorGeneral" />
+                <LinearLayout
+                    android:id="@+id/lin_kq2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center_horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="32px"
+                            android:layout_height="32px"
+                            android:layout_gravity="center"
+                            android:src="@drawable/question" />
+
+                        <TextView
+                            android:id="@+id/tv_kqvalue2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="交易状态"
+                android:textColor="@color/colorGeneral" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/rate_of_return"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/colorGeneral" />
+
+                <LinearLayout
+                    android:id="@+id/lin_kq"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center_horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="32px"
+                            android:layout_height="32px"
+                            android:layout_gravity="center"
+                            android:src="@drawable/question" />
+
+                        <TextView
+                            android:id="@+id/tv_kqvalue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="预期年化收益率"
+                android:textColor="@color/colorGeneral" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

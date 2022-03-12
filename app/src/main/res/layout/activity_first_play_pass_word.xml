@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first_play_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.hundsun.zjfae.activity.mine.FirstPlayPassWordActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <include
+            android:id="@+id/ll_top_bar"
+            layout="@layout/base_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100px"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingRight="30px"-->
+    <!--android:paddingLeft="30px"-->
+    <!--android:gravity="center"-->
+    <!--android:singleLine="true"-->
+    <!--android:inputType="number"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:textSize="14sp"-->
+    <!--android:text="交易密码:"/>-->
+
+    <EditText
+        android:id="@+id/play_first_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:background="@drawable/shape_assignee_pay_border"
+        android:hint="请输入6位数交易密码"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:padding="30px"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="25px"-->
+    <!--android:background="#ededed"/>-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100px"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingRight="30px"-->
+    <!--android:paddingLeft="30px"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:textSize="14sp"-->
+    <!--android:text="确认密码:"/>-->
+
+    <EditText
+        android:id="@+id/verify_play_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:background="@drawable/shape_assignee_pay_border"
+        android:hint="请再次输入交易密码"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:padding="30px"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+    <!--</LinearLayout>-->
+
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:text="交易密码由6位数字组成"
+        android:textColor="@color/colorGeneral"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/play_pw_commit"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_margin="30px"
+        android:background="@drawable/login_button"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+</LinearLayout>

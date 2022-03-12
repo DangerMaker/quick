@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hundsun.zjfae.common.view.CustomLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:titleText="@string/transferList"
+        tools:context=".activity.product.SelectConditionTransferListActivity">
+
+
+    <LinearLayout
+            android:id="@+id/ll_condition_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+        <com.hundsun.zjfae.fragment.finance.widget.ConditionLinearLayout
+                android:id="@+id/condition_layout"
+                android:layout_width="wrap_content"
+                android:gravity="center|left"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e7e7e7" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+
+        <com.hundsun.zjfae.fragment.finance.widget.CustomSelectorLayout
+                android:id="@+id/selector_amount_status"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                app:selector_text="起投金额" />
+
+
+        <com.hundsun.zjfae.fragment.finance.widget.CustomSelectorLayout
+                android:id="@+id/selector_time_status"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                app:selector_text="剩余期限" />
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/smartLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:descendantFocusability="blocksDescendants"
+                app:srlAccentColor="@android:color/white"
+                app:srlPrimaryColor="@color/colorRed">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+
+                <ImageView
+                        android:id="@+id/image_not_date"
+                        android:layout_width="280dp"
+                        android:layout_height="280dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentTop="true"
+                        android:visibility="gone"
+                        android:src="@drawable/bg_kong" />
+
+                <TextView
+                        android:id="@+id/no_date_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@android:color/black"
+                        android:layout_below="@id/image_not_date"
+                        android:textSize="24sp" />
+
+
+            </RelativeLayout>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <com.hundsun.zjfae.common.view.SolveClickTouchConflictLayout
+                android:id="@+id/layout"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center|right"
+                android:background="@drawable/shape_red_circular"
+                android:gravity="center" />
+
+        <Button
+                android:id="@+id/btn_up"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:alpha="0.5"
+                android:background="@drawable/uprefresh"
+                android:visibility="gone" />
+    </FrameLayout>
+
+</com.hundsun.zjfae.common.view.CustomLinearLayout>

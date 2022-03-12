@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/unbind_card_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_background"
+    tools:context="com.hundsun.zjfae.activity.mine.UnbindBankCardMaterialsActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:background="@color/colorRed">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="35px"
+            android:paddingRight="35px"
+            android:text="返回"
+           android:textSize="15sp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="资料上传列表"
+           android:textSize="15sp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/main_background">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/slide_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/black"/>
+        <LinearLayout
+            android:id="@+id/unbind_reason_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal"
+            android:background="@android:color/white">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="25px"
+                android:paddingRight="25px"
+                android:gravity="center"
+               android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:text="解绑原因"/>
+
+            <TextView
+                android:id="@+id/unbind_shade"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+               android:textSize="15sp"
+                android:text="银行卡已注销"
+                android:textColor="@android:color/black"
+                android:gravity="center|right"
+                android:paddingRight="45px"
+                android:layout_weight="1"/>
+
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/trandownbalck"
+                android:layout_marginRight="25px"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/black"/>
+
+
+
+
+        <EditText
+            android:id="@+id/other_ed"
+            android:layout_width="match_parent"
+            android:layout_height="375px"
+            android:layout_marginTop="35px"
+            android:layout_marginLeft="55px"
+            android:layout_marginRight="55px"
+            android:gravity="left|top"
+            android:visibility="gone"
+            android:textColor="@android:color/black"
+           android:textSize="15sp"
+            android:background="@drawable/white_shape"/>
+
+
+        <LinearLayout
+            android:id="@+id/check_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45px"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/instructions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorRed"
+                android:gravity="center|left"
+                android:paddingLeft="15px"
+                android:paddingRight="15px" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/part_button"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="25px"
+        android:layout_marginLeft="45px"
+        android:layout_marginRight="45px"
+        android:layout_marginBottom="25px"
+        android:text="提交"
+        android:clickable="false"
+        android:focusable="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/product_buy"/>
+
+
+
+
+</LinearLayout>

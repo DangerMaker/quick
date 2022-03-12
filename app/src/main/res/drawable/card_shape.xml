@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--表示当前视图是否处于正在交互的窗口中，这个值由系统自动决定，应用程序不能进行改变。-->
+
+    <item android:state_window_focused="false">
+        <shape>
+            <corners android:bottomLeftRadius="15px" android:bottomRightRadius="15px" />
+
+
+            <solid android:color="@color/colorRed" />
+        </shape>
+    </item>
+
+    <!--表示当前视图获得到焦点，当前视图是否处于按下状态-->
+    <item android:state_focused="true" android:state_pressed="true">
+        <shape>
+            <corners android:bottomLeftRadius="15px" android:bottomRightRadius="15px" />
+
+
+            <solid android:color="#FFC0BE" />
+        </shape>
+    </item>
+
+    <!--表示当前视图没有获得到焦点，当前视图是否处于按下状态-->
+    <item android:state_focused="false" android:state_pressed="true">
+        <shape>
+            <corners android:bottomLeftRadius="15px" android:bottomRightRadius="15px" />
+
+
+            <solid android:color="#FFC0BE" />
+        </shape>
+    </item>
+
+    <!--表示当前视图处于选中状态-->
+    <item android:state_selected="true">
+        <shape>
+            <corners android:bottomLeftRadius="15px" android:bottomRightRadius="15px" />
+
+
+            <solid android:color="#FFC0BE" />
+        </shape>
+    </item>
+
+
+    <item android:state_focused="true">
+        <shape>
+            <corners android:bottomLeftRadius="15px" android:bottomRightRadius="15px" />
+
+            <solid android:color="#FFC0BE" />
+        </shape>
+    </item>
+
+</selector>

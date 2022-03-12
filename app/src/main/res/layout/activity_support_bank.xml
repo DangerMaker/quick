@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/support_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.hundsun.zjfae.activity.mine.SupportBankActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentTop="true">
+        <include
+            android:id="@+id/ll_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            layout="@layout/base_title" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="35px"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10px"
+                    android:gravity="left|center"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:text="推荐银行"/>
+
+                <TextView
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:padding="5px"
+                    android:gravity="center"
+                    android:layout_marginLeft="10px"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/support_shape"
+                    android:text="推荐"/>
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/support_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25px"
+          android:padding="10px"
+          android:orientation="vertical">
+
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="10px"
+              android:gravity="left|center"
+              android:textSize="18sp"
+              android:textColor="@android:color/black"
+              android:text="其他银行"/>
+
+          <android.support.v7.widget.RecyclerView
+              android:id="@+id/no_support_bank"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

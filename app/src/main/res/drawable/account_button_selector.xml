@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--表示当前视图是否处于正在交互的窗口中，这个值由系统自动决定，应用程序不能进行改变。-->
+
+    <item android:state_window_focused="false">
+        <shape>
+            <corners android:radius="10px" />
+
+            <padding android:bottom="5px" android:left="30px" android:right="30px" android:top="5px" />
+
+            <stroke android:width="1px" android:color="@color/colorRed" />
+
+            <solid android:color="@color/colorRed" />
+        </shape>
+    </item>
+
+    <!-- 非触摸模式下获得焦点并单击时的背景图片 -->
+    <item android:state_focused="true" android:state_pressed="true">
+        <shape>
+            <corners android:radius="10px" />
+
+            <padding android:bottom="5px" android:left="30px" android:right="30px" android:top="5px" />
+
+            <stroke android:width="1px" android:color="@color/colorRed" />
+
+            <solid android:color="@color/colorRed" />
+        </shape>
+    </item>
+
+    <!-- 触摸模式下单击时的背景图片-->
+    <item android:state_focused="false" android:state_pressed="true">
+        <shape>
+            <corners android:radius="10px" />
+
+            <padding android:bottom="5px" android:left="30px" android:right="30px" android:top="5px" />
+
+            <stroke android:width="1px" android:color="@color/red" />
+
+            <solid android:color="@color/red" />
+        </shape>
+    </item>
+
+
+    <item android:state_focused="true">
+        <shape>
+            <corners android:radius="10px" />
+
+            <padding android:bottom="5px" android:left="30px" android:right="30px" android:top="5px" />
+
+            <stroke android:width="1px" android:color="@color/red" />
+
+            <solid android:color="@color/red" />
+        </shape>
+    </item>
+</selector>

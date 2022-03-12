@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/face_authorisation_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.hundsun.zjfae.activity.mine.FaceAuthorisationActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentTop="true">
+        <include
+            android:id="@+id/ll_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            layout="@layout/base_title" />
+
+    </RelativeLayout>
+
+
+    <WebView
+        android:id="@+id/noticeContent_webView"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+    </WebView>
+
+
+
+    <LinearLayout
+        android:id="@+id/accredit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/accredit_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45px"
+            android:clickable="false"
+            android:checked="false"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="阅读并同意《个人信息采集授权书》"
+            android:gravity="center|left"
+           android:textSize="15sp"
+            android:textColor="@color/colorRed"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_margin="35px"
+        android:orientation="horizontal">
+
+
+        <Button
+          android:id="@+id/accredit_finish"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="15px"
+            android:background="@drawable/face_authorisation_button_checked_shape"
+            android:text="取消"/>
+
+
+        <Button
+            android:id="@+id/accredit_button"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="15px"
+            android:background="@drawable/face_authorisation_button_normal_shape"
+            android:textColor="@android:color/white"
+            android:text="确认"/>
+    </LinearLayout>
+
+</LinearLayout>

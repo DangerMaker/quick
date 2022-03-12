@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/offlineWeb_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.hundsun.zjfae.activity.mine.OfflineRechargeWebActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <include
+            android:id="@+id/ll_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/base_title" />
+
+    </RelativeLayout>
+
+    <com.hundsun.zjfae.common.view.WebViewWithProgress
+        android:id="@+id/content_webView"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0px">
+    </com.hundsun.zjfae.common.view.WebViewWithProgress>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_margin="35px"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/change_bank"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15px"
+            android:text="更换银行卡"
+            android:textColor="@android:color/white"
+            android:background="@drawable/login_button" />
+
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15px"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:background="@drawable/login_button" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/change_bank_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_margin="35px"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/finish_button"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15px"
+            android:text="继续线上充值"
+            android:textColor="@android:color/white"
+            android:background="@drawable/login_button" />
+
+
+        <Button
+            android:id="@+id/change_bank_button"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15px"
+            android:text="更换银行卡"
+            android:textColor="@android:color/white"
+            android:background="@drawable/login_button" />
+    </LinearLayout>
+
+
+</LinearLayout>

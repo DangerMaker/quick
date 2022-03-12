@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/play_state_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".activity.product.ProductPlayStateActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+        <include
+            android:id="@+id/ll_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/base_title" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/register_success"/>
+
+
+
+        <TextView
+            android:id="@+id/playState"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginTop="20px"
+           android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/play_state"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+       android:layout_margin="15px"
+        android:text="完成"
+        android:textColor="@android:color/white"
+        android:background="@drawable/login_button"/>
+
+
+    <LinearLayout
+        android:id="@+id/banner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="470px"
+        android:visibility="gone"
+        android:layout_margin="10px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:text="----更多精彩活动----"
+            android:gravity="center"
+            android:background="@color/main_touch"/>
+
+
+        <com.android.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="370px" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

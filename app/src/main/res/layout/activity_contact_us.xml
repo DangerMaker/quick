@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_contact_my"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.hundsun.zjfae.activity.more.ContactUsActivity">
+
+    <include
+        android:id="@+id/ll_top_bar"
+        layout="@layout/base_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="35px"
+        android:layout_marginTop="35px"
+        android:text="公司简介:"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35px"
+        android:layout_marginRight="35px"
+        android:text="@string/introduce" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20px"
+        android:background="@color/colorGeneral" />
+
+    <LinearLayout
+        android:id="@+id/lin_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35px"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="客服电话:"
+            android:textColor="@android:color/black"
+           android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_weight="3"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="4009999000"
+            android:textColor="@color/agreement"
+           android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35px"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="公司名称:"
+            android:textColor="@android:color/black"
+           android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_weight="3"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="浙江金融资产交易中心"
+            android:textColor="@android:color/black"
+           android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35px"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="公司地址:"
+            android:textColor="@android:color/black"
+           android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_weight="3"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="杭州市江干区富春路290号钱江国际时代广场2幢27-29层"
+            android:textColor="@android:color/black"
+           android:textSize="15sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35px"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="公司网站:"
+            android:textColor="@android:color/black"
+           android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_weight="3"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="http://www.zjfae.com"
+            android:textColor="@android:color/black"
+           android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35px"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="公司邮箱:"
+            android:textColor="@android:color/black"
+           android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_weight="3"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="service@zjfae.com"
+            android:textColor="@android:color/black"
+           android:textSize="15sp" />
+
+    </LinearLayout>
+</LinearLayout>

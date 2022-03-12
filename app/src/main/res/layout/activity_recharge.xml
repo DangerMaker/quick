@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recharge_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.hundsun.zjfae.activity.mine.RechargeActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <include
+            android:id="@+id/ll_top_bar"
+            layout="@layout/base_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="160px"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:text="银行卡"
+                    android:textColor="@android:color/black"
+                   android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/bank_icon"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/bank_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left|center"
+                    android:paddingLeft="15px"
+                    android:textColor="@android:color/black"
+                   android:textSize="15sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingRight="15px"
+                    android:text="尾号"
+                    android:textColor="@android:color/black"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/bank_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingRight="35px"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/product_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="30px">
+
+                <TextView
+                    android:layout_width="265px"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:text="充值金额(元)"
+                    android:textColor="@android:color/black"
+                   android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20px"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/recharge_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="请输入充值金额"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="15px"
+                        android:singleLine="true"
+                        android:textColor="@color/colorRed"
+                       android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/money_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="330px"
+                android:layout_marginRight="35px"
+                android:text="零元整"
+                android:textColor="@color/colorRed"
+               android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/product_color" />
+
+
+            <RelativeLayout
+                android:id="@+id/sms_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="30px"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/tv_sms"
+                    android:layout_width="265px"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:text="短信验证码"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:textColor="@android:color/black"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/sms_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80px"
+                    android:background="@drawable/product_buy_clickable"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:paddingLeft="10px"
+                    android:paddingRight="10px"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+
+                <EditText
+                    android:id="@+id/sms_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingLeft="20px"
+                    android:layout_toRightOf="@id/tv_sms"
+                    android:layout_toLeftOf="@id/sms_button"
+                    android:layout_centerInParent="true"
+                    android:textColor="@android:color/black"
+                    android:hint="请输入短信验证码"
+                   android:textSize="15sp" />
+
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/product_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="25px"
+                android:background="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/add_bank_bg"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="单笔限额(元)"
+                        android:textColor="@android:color/black"
+                       android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/hMaxAmount_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                       android:textSize="15sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="单日限额(元)"
+                        android:textColor="@android:color/black"
+                       android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/maxAmount_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                       android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="单月限额(元)"
+                        android:textColor="@android:color/black"
+                       android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/mMaxAmount_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                       android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@android:color/black" />
+
+
+            <TextView
+                android:id="@+id/memo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="35px"
+                android:paddingTop="25px"
+                android:paddingRight="25px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="温馨提示:"
+                    android:textColor="@android:color/black"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/accreditedDiff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/recharge_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                   android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/agreement_layout"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="35px"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/recharge_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15px" />
+
+
+                <TextView
+                    android:id="@+id/tv_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="我已阅读并同意相关协议《充值授权书》"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/recharge_button"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_margin="25px"
+                android:background="@drawable/product_buy_clickable"
+                android:text="完成"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

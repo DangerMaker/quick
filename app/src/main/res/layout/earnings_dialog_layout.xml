@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog"
+        android:orientation="vertical"
+        android:padding="20px">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="计算收益"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+
+            <ImageView
+                android:id="@+id/image_clean"
+                android:layout_width="35px"
+                android:layout_height="35px"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="25px"
+                android:src="@drawable/clean" />
+
+        </FrameLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/product_color" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_gravity="center"
+                android:src="@drawable/financial_earnings" />
+
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:inputType="number|numberDecimal"
+                android:singleLine="true"
+               android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="25px"
+                android:paddingRight="25px"
+                android:singleLine="true"
+                android:text="元"
+                android:textColor="@android:color/black"
+               android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/black" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_gravity="center"
+                    android:src="@drawable/calendar" />
+
+
+                <EditText
+                    android:id="@+id/timeLimit"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:inputType="number|numberDecimal"
+                    android:paddingLeft="15px"
+                    android:singleLine="true"
+                   android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="25px"
+                android:paddingRight="25px"
+                android:singleLine="true"
+                android:text="天"
+                android:textColor="@android:color/black"
+               android:textSize="15sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="20px"
+                android:layout_marginRight="10px"
+                android:layout_marginBottom="20px"
+                android:background="@android:color/black" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rate" />
+
+
+                <EditText
+                    android:id="@+id/rate"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:inputType="number|numberDecimal"
+                    android:paddingLeft="15px"
+                    android:singleLine="true"
+                   android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="25px"
+                android:paddingRight="25px"
+                android:singleLine="true"
+                android:text="%"
+                android:textColor="@android:color/black"
+               android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/black" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100px"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="预期收益:"
+                android:textColor="@android:color/black"
+               android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:paddingLeft="45px"
+                android:textColor="@android:color/black"
+               android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="25px"
+                android:paddingRight="25px"
+                android:singleLine="true"
+                android:text="元"
+                android:textColor="@android:color/black"
+               android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/count_button"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="20px"
+            android:layout_marginRight="15px"
+            android:layout_marginBottom="15px"
+            android:background="@drawable/login_button"
+            android:text="计算"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+

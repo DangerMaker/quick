@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_pay_interest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentTop="true">
+
+        <include
+            android:id="@+id/ll_top_bar"
+            layout="@layout/base_title"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginBottom="30px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总利息(元)"
+            android:textColor="@color/black"
+           android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/total_interest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/colorPrimary"
+           android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@color/product_color" />
+
+    <!--<com.scwang.smartrefresh.layout.SmartRefreshLayout-->
+    <!--android:id="@+id/refreshLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@android:color/white"-->
+    <!--app:srlPrimaryColor="@color/colorRed"-->
+    <!--app:srlAccentColor="@android:color/white"-->
+    <!--android:descendantFocusability="blocksDescendants">-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_pay_interest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Theme_white"
+            android:overScrollMode="never"></android.support.v7.widget.RecyclerView>
+
+        <include layout="@layout/layout_no_net_data" />
+    </RelativeLayout>
+    <!--</com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
+
+</LinearLayout>

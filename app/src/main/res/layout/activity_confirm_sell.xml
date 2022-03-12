@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_confirm_sell"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/rl_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:layout_alignParentTop="true">
+
+        <include
+                android:id="@+id/ll_top_bar"
+                layout="@layout/base_title"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+            android:id="@+id/register_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginBottom="30px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="产品名称"
+                        android:textColor="@color/black" />
+
+                <TextView
+                        android:id="@+id/title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60px"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/black" />
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30px"
+                    android:background="#ededed" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginBottom="30px"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="转让本金"
+                        android:textColor="@color/black" />
+
+                <TextView
+                        android:id="@+id/benjin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60px"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/black" />
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="#ededed" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginBottom="30px"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="转让利率"
+                        android:textColor="@color/black" />
+
+                <TextView
+                        android:id="@+id/lilv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60px"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/black" />
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="#ededed" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginBottom="30px"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="浮动盈亏"
+                        android:textColor="@color/black" />
+
+                <TextView
+                        android:id="@+id/floatingProfit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60px"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/black" />
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="#ededed" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginBottom="30px"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="转让收益"
+                        android:textColor="@color/black" />
+
+                <TextView
+                        android:id="@+id/transferIncome"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60px"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/black" />
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="#ededed" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginBottom="30px"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="转让总价"
+                        android:textColor="@color/black" />
+
+                <TextView
+                        android:id="@+id/amount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60px"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/black" />
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="#ededed" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginBottom="30px"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="手续费"
+                        android:textColor="@color/black" />
+
+                <TextView
+                        android:id="@+id/extraCost"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60px"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/black" />
+            </LinearLayout>
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="#ededed" />
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ededed"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10px"
+                        android:paddingBottom="10px"
+                        android:paddingLeft="10px"
+                        android:paddingRight="10px"
+                        android:minHeight="50px"
+                        android:background="@android:color/white"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:id="@+id/tv_remakes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorRed" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <Button
+                    android:id="@+id/bt_sell"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:layout_margin="30px"
+                    android:background="@drawable/account_button_selector"
+                    android:text="确认转让"
+                    android:textColor="@android:color/white" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

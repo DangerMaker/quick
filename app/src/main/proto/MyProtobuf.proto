@@ -1,0 +1,29 @@
+syntax = "proto3";
+package pb.example;
+option java_outer_classname="MyProtoBuf";
+//定义规范：
+//message类 均首字母大写   大写！！！！
+ 
+//test url :   /test
+message Request10000 {         //定义一个类，名称是Request10000 用于客户端请求
+	Params params = 1;
+	message Params {
+		string name = 1;                 //一些测试内容
+		int64 timestamp = 2;               //时间戳 毫秒
+		repeated string usernames = 3;   //一些测试内容
+	}
+	string code = 2;
+	string msg = 3;
+}
+ 
+message Response10000 {     //定义一个类，名称是Response10000 用于响应客户端请求
+	Data data = 1;
+	message Data {
+		//返回的数据
+		string helloname = 1;                   //一些测试内容
+		string timestamp = 2;                   //时间戳 毫秒
+		repeated string helloUsername = 3;      //一些测试内容
+	}
+	string code = 2;
+	string msg = 3;
+}

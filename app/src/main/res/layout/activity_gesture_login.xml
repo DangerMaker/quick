@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lin_gesture_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.hundsun.zjfae.activity.logingesture.GestureLoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentTop="true">
+
+        <include
+            android:id="@+id/ll_top_bar"
+            layout="@layout/base_title"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <!--<com.hundsun.zjfae.activity.logingesture.widget.LockPatternIndicator-->
+    <!--android:id="@+id/lockPatterIndicator"-->
+    <!--android:layout_width="60px"-->
+    <!--android:layout_height="60px"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginTop="50px" />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rel_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="60px"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/messageTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20px"
+                    android:text=""
+                    android:textColor="@color/black"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20px"
+                    android:text=""
+                    android:textColor="@color/red_a700"
+                   android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_gesture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_top"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40px"
+            android:orientation="vertical">
+
+            <com.hundsun.zjfae.activity.logingesture.widget.LockPatternView
+                android:id="@+id/lockPatternView"
+                android:layout_width="540px"
+                android:layout_height="540px" />
+
+            <RelativeLayout
+                android:id="@+id/rel_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginTop="40px"
+                android:gravity="">
+
+                <TextView
+                    android:id="@+id/forgetGestureBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/gesture_forget_gesture"
+                   android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cancle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="取消"
+                   android:textSize="15sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/withdrawal_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.hundsun.zjfae.activity.mine.WithdrawalActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <include
+            android:id="@+id/ll_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/base_title" />
+
+    </RelativeLayout>
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:paddingLeft="25px"
+            android:paddingRight="25px"
+            android:paddingBottom="25px"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:textColor="@android:color/black"
+                    android:text="可提现金额:"/>
+
+                <TextView
+                    android:id="@+id/with_drawer_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:paddingLeft="10px"
+                    android:text="0.00"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:text="元"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/product_color"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200px"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:textColor="@android:color/black"
+                    android:text="银行卡" />
+
+              <LinearLayout
+                  android:layout_width="0px"
+                  android:layout_weight="2"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal">
+
+
+                  <ImageView
+                      android:id="@+id/bank_icon"
+                      android:layout_width="55px"
+                      android:layout_height="55px"
+                      android:layout_marginLeft="10px"
+                      android:layout_gravity="center" />
+
+                  <TextView
+                      android:id="@+id/bank_name"
+                      android:layout_width="wrap_content"
+                      android:layout_weight="1"
+                      android:paddingLeft="10px"
+                      android:textColor="@android:color/black"
+                      android:gravity="left|center"
+                      android:layout_height="match_parent" />
+
+
+
+              </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="尾号"
+                    android:paddingRight="15px"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/bank_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="35px"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/product_color"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200px"
+                    android:layout_height="match_parent"
+                    android:text="提现金额(元)"
+                    android:textColor="@android:color/black"
+                    android:gravity="center|left"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10px"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/width_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:background="@null"
+                        android:textColor="@color/colorRed"
+                        android:singleLine="true"
+                        android:inputType="numberDecimal"
+                       android:textSize="15sp"
+                        android:hint="请输入提现金额"/>
+
+
+                    <TextView
+                        android:id="@+id/money_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="零元整"
+                        android:textColor="@color/colorRed"/>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/withdrawal_all_money"
+                    android:layout_width="150px"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/storage_layout_bg"
+                    android:text="全部"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/product_color"/>
+
+
+            <LinearLayout
+                android:id="@+id/bank_state_layout"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:gravity="left|center"
+                android:visibility="invisible"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:gravity="center"
+                    android:text="支行信息:"
+                    android:textColor="@color/colorRed"/>
+
+                <TextView
+                    android:id="@+id/branchName"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="100px"
+                    android:layout_marginLeft="15px"
+                    android:gravity="center"
+                    android:textColor="@color/colorRed" />
+
+                <TextView
+                    android:id="@+id/modification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:paddingRight="35px"
+                    android:paddingLeft="35px"
+                    android:gravity="center"
+                    android:textColor="@color/storage_layout_bg"
+                    android:text="(轻触修改)" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="到账时间:资金预计到账时间为当日24点前(遇节假日或银行系统升级等,可能会推迟)"/>
+
+
+            <TextView
+                android:id="@+id/remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:layout_marginTop="45px"
+                android:layout_marginBottom="45px"
+                android:textColor="@android:color/black"
+                />
+
+            <Button
+                android:id="@+id/withdrawal_button"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_margin="45px"
+                android:text="提现"
+                android:textColor="@android:color/white"
+                android:background="@drawable/account_button_selector"/>
+
+
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <WebView
+                    android:id="@+id/content_webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:layout_gravity="center"
+                    android:visibility="gone">
+                </WebView>
+
+                <TextView
+                    android:id="@+id/kb_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="45px"
+                    android:paddingRight="45px"
+                    android:visibility="gone"
+                    android:minHeight="100px"/>
+
+            </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+            <com.android.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="370px"
+                android:layout_gravity="bottom"
+                app:image_scale_type="fit_xy"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/offline_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.hundsun.zjfae.activity.mine.OfflineRechargeActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <include
+            android:id="@+id/ll_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/base_title" />
+
+    </RelativeLayout>
+
+    <com.hundsun.zjfae.common.view.WebViewWithProgress
+        android:id="@+id/content_webView"
+        android:layout_width="match_parent"
+        android:layout_height="360px">
+    </com.hundsun.zjfae.common.view.WebViewWithProgress>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:gravity="center"
+       android:textSize="15sp"
+        android:textColor="@color/offline_color"
+        android:text="客户资金存管账户"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="255px"
+        android:orientation="vertical"
+        android:layout_margin="35px">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="户名"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeStepGranularity="1sp"
+               android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:background="@drawable/offline_tv_account_top_left_shape"/>
+
+            <TextView
+                android:id="@+id/parms_top"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeStepGranularity="1sp"
+               android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:background="@drawable/offline_tv_account_top_center_shape"/>
+
+            <TextView
+                android:id="@+id/copy_top"
+                android:layout_width="150px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/offline_color"
+                android:text="复制"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeStepGranularity="1sp"
+               android:textSize="15sp"
+                android:background="@drawable/offline_tv_account_top_right_shape"/>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/offline_tv_account_center_left_shape"
+                android:text="账号"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeStepGranularity="1sp"
+               android:textSize="15sp"
+                android:textColor="@android:color/black" />
+
+
+            <TextView
+                android:id="@+id/parms_center"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/offline_tv_account_center_center_shape"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeStepGranularity="1sp"
+               android:textSize="15sp"
+                android:textColor="@android:color/black"/>
+
+
+            <TextView
+                android:id="@+id/copy_center"
+                android:layout_width="150px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/offline_tv_account_center_right_shape"
+                android:text="复制"
+                android:textColor="@color/offline_color"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeStepGranularity="1sp"
+               android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/offline_tv_account_bottom_left_shape"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeStepGranularity="1sp"
+               android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:text="开户行"/>
+
+
+            <TextView
+                android:id="@+id/parms_bottom"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/offline_tv_account_center_center_shape"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeStepGranularity="1sp"
+               android:textSize="15sp"
+                android:textColor="@android:color/black" />
+
+
+            <TextView
+                android:id="@+id/copy_bottom"
+                android:layout_width="150px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/offline_tv_account_bottom_right_shape"
+                android:text="复制"
+                android:textColor="@color/offline_color"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeStepGranularity="1sp"
+               android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/parms_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+           android:textSize="15sp"
+            android:textColor="@color/offline_color"
+            android:text="详见线下汇款流程>"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/lin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_margin="35px"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/change_bank"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15px"
+            android:text="更换银行卡"
+            android:textColor="@android:color/white"
+            android:background="@drawable/login_button" />
+
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15px"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:background="@drawable/login_button" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/change_bank_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_margin="35px"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/finish_button"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15px"
+            android:text="继续线上充值"
+            android:textColor="@android:color/white"
+            android:background="@drawable/login_button" />
+
+
+        <Button
+            android:id="@+id/change_bank_button"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15px"
+            android:text="更换银行卡"
+            android:textColor="@android:color/white"
+            android:background="@drawable/login_button" />
+    </LinearLayout>
+
+</LinearLayout>

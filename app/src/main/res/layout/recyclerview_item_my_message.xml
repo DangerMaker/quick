@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        android:background="@drawable/bg_my_reserve"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15px"
+            android:background="@drawable/message_checkbox_style"
+            android:button="@null"
+            android:clickable="false"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_message_tips"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="5px"
+                android:layout_marginTop="5px"
+                android:background="@drawable/shape_red_point" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35px"
+                android:layout_marginTop="10px"
+                android:layout_marginRight="35px"
+                android:layout_marginBottom="15px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px">
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/tv_date"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text=""
+                            android:textColor="@android:color/black"
+                           android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text=""
+                            android:textColor="@color/colorGeneral"
+                           android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15px"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text=""
+                        android:textColor="@color/colorGeneral"
+                       android:textSize="15sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

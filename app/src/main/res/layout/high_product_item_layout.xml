@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transfer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_margin="15px"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingLeft="15px"
+                android:paddingTop="10px"
+                android:paddingRight="15px"
+                android:gravity="center|left"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/selling_image"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_marginRight="60px"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="95px"
+        android:layout_marginRight="30px"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:id="@+id/left_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="30px"
+            android:layout_marginRight="30px"/>
+
+        <ImageView
+            android:id="@+id/center_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="30px"
+            android:layout_marginRight="30px"/>
+
+        <ImageView
+            android:id="@+id/right_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="30px"
+            android:layout_marginRight="30px"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/targetRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorRed"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorGeneral"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:text="@string/transfer_earnings"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/leastTranAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textSize="15sp"
+                    android:textColor="@color/colorRed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorGeneral"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:text="起购本金（元）"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/leftDays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textSize="15sp"
+                    android:textColor="@color/colorRed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorGeneral"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:text="剩余（天）"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/delegateAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textSize="15sp"
+                    android:textColor="@color/colorRed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorGeneral"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:text="转让价格（元）"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/product_right_bottom"
+            android:layout_width="63px"
+            android:layout_height="65px"
+            android:layout_gravity="right|bottom" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15px"
+        android:background="@drawable/product_list_shape" />
+</LinearLayout>

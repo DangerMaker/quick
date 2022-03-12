@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bank_card_management_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/product_color"
+    tools:context="com.hundsun.zjfae.activity.mine.BankCardManagementActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentTop="true">
+        <include
+            android:id="@+id/ll_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            layout="@layout/base_title" />
+
+    </RelativeLayout>
+    
+    
+   <TextView
+       android:id="@+id/title_type"
+       android:layout_width="match_parent"
+       android:layout_height="60px"
+       android:gravity="center|left"
+       android:paddingLeft="45px" />
+
+
+
+    <LinearLayout
+        android:id="@+id/face_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15px"
+        android:paddingBottom="15px"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+               android:textSize="15sp"
+                android:paddingLeft="45px"
+                android:paddingTop="10px"
+                android:paddingBottom="10px"
+                android:gravity="center|left"
+                android:text="人脸识别"/>
+
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="采集人脸图形进行解绑"
+                android:gravity="left|center"
+                android:paddingLeft="45px"
+                android:paddingTop="15px"
+                android:paddingBottom="15px"
+                android:textSize="12sp"
+                android:textColor="@color/main_gray"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="25px"
+            android:scaleType="center"
+            android:src="@drawable/right_back"/>
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:background="@color/product_color"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/id_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15px"
+        android:paddingBottom="15px"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="上传身份资料"
+                android:gravity="center|left"
+                android:paddingLeft="45px"
+                android:paddingTop="10px"
+                android:paddingBottom="10px"
+                android:textColor="@android:color/black"
+               android:textSize="15sp"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="人工审核信息,审核结果将在三个工作日内短信告知"
+                android:gravity="left|center"
+                android:paddingLeft="45px"
+                android:paddingTop="15px"
+                android:paddingBottom="15px"
+                android:textSize="12sp"
+                android:textColor="@color/main_gray" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="25px"
+            android:scaleType="center"
+            android:src="@drawable/right_back"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="35px"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="35px"
+            android:layout_height="35px"
+            android:layout_gravity="center"
+            android:src="@drawable/warning"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+           android:textSize="15sp"
+            android:text="温馨提示"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/warning_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:textSize="15sp"
+        android:textColor="@color/gray"
+        android:layout_margin="35px"/>
+
+
+</LinearLayout>

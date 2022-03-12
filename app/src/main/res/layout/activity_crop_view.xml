@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:id="@+id/layout_crop_view"
+    android:orientation="vertical">
+
+
+    <com.hundsun.zjfae.common.view.cropview.CropView
+        android:id="@+id/cropView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnlay"
+        />
+
+    <ImageView
+        android:id="@+id/resultIv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnlay"
+        android:layout_margin="30dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/btnlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:text="选取"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:orientation="horizontal">
+        <!-- 以下都是侧滑菜单的内容依序排列 -->
+
+        <ImageView
+            android:id="@+id/delete_image"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:src="@drawable/item_delete"
+            android:scaleType="center"
+            android:visibility="gone" />
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_weight="1"
+          android:layout_height="match_parent"
+          android:paddingLeft="20px"
+          android:orientation="vertical">
+          <TextView
+              android:id="@+id/tv_content"
+              android:layout_width="match_parent"
+              android:layout_height="100px"
+              android:clickable="true"
+              android:gravity="left|center"
+              android:textColor="@android:color/black"/>
+
+
+          <TextView
+              android:id="@+id/tv_select"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:text="未选择"
+              android:textColor="@android:color/black"/>
+
+
+      </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:background="@color/colorRed"
+            android:text="删除"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:textColor="@android:color/white"/>
+
+
+        <ProgressBar
+            android:id="@+id/Pro_uploading"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_gravity="center"
+            android:layout_marginRight="5px"
+            android:visibility="gone"
+            android:indeterminateTint="@color/gray"
+            android:indeterminateDrawable="@drawable/progress_bar_circle"/>
+
+
+
+        <ImageView
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:src="@drawable/right_back"
+            android:layout_marginRight="25px"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="@color/product_color"
+        />
+</LinearLayout>

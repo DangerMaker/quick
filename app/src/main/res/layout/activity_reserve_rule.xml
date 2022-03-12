@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lin_reserve_rule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.hundsun.zjfae.activity.productreserve.ReserveRuleActivity">
+
+    <include
+        android:id="@+id/ll_top_bar"
+        layout="@layout/base_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15px"
+            android:text="1、可预约次日(含)后十五日内即将挂牌交易的产品。
+        \n\n2、预约成功后，系统会冻结预约额度相应的保证金，请在预约前打入足额保证金，在交易时将抵扣本金。如遇活动款、爆款产品，保证金相应提高，具体以公告为准。
+        \n\n3、预约成功后应在该预约产品规定的挂牌期内交易完成。
+        \n\n4、同一产品的预约申请只允许申请一笔，如需变更预约额度，应在预约期内，先取消原预约后再行预约。
+        \n\n5、预约产品交易必须按照预约额度足额交易。
+        \n\n6、产品规定的预约交易期取消预约、预约未交易则视为违约，产品规定的预约交易期取消预约的保证金即时解冻，预约未交易保证金于次日解冻。
+        \n\n7、连续6个自然月内累计出现3次违约，后6个月（180天）内将禁用预约系统（含产品预约、短期产品预约以及个性化预约）。 示例：客户在1月20日、1月22日、6月1日分别有三次违约（系统判定1月份至6月份为连续6个自然月），则从6月1日开始的6个月内系统将禁用预约系统。
+        \n\n8、预约成功后，预约截止时间前，可取消预约，保证金即时解冻。
+        \n\n9、预约期的产品上线时间、产品参数存在与实际上线时间、实际上线产品参数有所区别的可能性，产品参数包括但不限于产品名称、期限、利率、挂牌交易机构、担保方、受托管理人，以实际产品参数以上线产品的《产品说明书》为准。"
+            android:textColor="@color/black"
+           android:textSize="15sp" />
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

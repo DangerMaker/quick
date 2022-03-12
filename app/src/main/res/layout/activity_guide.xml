@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/guide_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.hundsun.zjfae.activity.register.RegisterStateActivity">
+    <!-- 头部 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+        <include
+            android:id="@+id/ll_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/base_title" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="220px"
+        android:layout_height="220px"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+        android:src="@drawable/register_success"/>
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_marginTop="25px"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:text="恭喜！注册成功"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:gravity="center"/>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20px"
+        android:background="@color/product_color"/>
+
+    <ImageView
+        android:id="@+id/progress_img"
+        android:layout_marginRight="45px"
+        android:layout_marginLeft="45px"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="20px"
+        android:scaleType="fitCenter"
+        />
+
+    <Button
+        android:id="@+id/add_bank_button"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:text="去绑定银行卡"
+        android:textColor="@android:color/white"
+        android:background="@drawable/login_button"
+        android:layout_marginRight="25px"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="75px"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/casual_button"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:text="随便逛逛"
+        android:textColor="@android:color/white"
+        android:background="@drawable/register_shape"
+        android:layout_marginRight="25px"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="45px"
+        android:gravity="center"/>
+
+</LinearLayout>
